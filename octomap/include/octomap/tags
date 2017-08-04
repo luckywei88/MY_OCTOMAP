@@ -1,0 +1,819 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AbstractOcTree	AbstractOcTree.h	/^  class AbstractOcTree {$/;"	c	namespace:octomap
+AbstractOcTreeNode	OcTreeDataNode.h	/^  class AbstractOcTreeNode {$/;"	c	namespace:octomap
+AbstractOccupancyOcTree	AbstractOccupancyOcTree.h	/^  class AbstractOccupancyOcTree : public AbstractOcTree {$/;"	c	namespace:octomap
+B	OcTreeLUT.h	/^      W = 0, E, N, S , T , B,                         \/\/ face neighbors$/;"	e	enum:octomap::OcTreeLUT::__anon1
+BE	OcTreeLUT.h	/^      SW, NW, SE, NE, TW, BW, TE, BE, TN, TS, BN, BS, \/\/ edge neighbors$/;"	e	enum:octomap::OcTreeLUT::__anon1
+BN	OcTreeLUT.h	/^      SW, NW, SE, NE, TW, BW, TE, BE, TN, TS, BN, BS, \/\/ edge neighbors$/;"	e	enum:octomap::OcTreeLUT::__anon1
+BNE	OcTreeLUT.h	/^      TNW, TSW, TNE, TSE, BNW, BSW, BNE, BSE          \/\/ vertex neighbors$/;"	e	enum:octomap::OcTreeLUT::__anon1
+BNW	OcTreeLUT.h	/^      TNW, TSW, TNE, TSE, BNW, BSW, BNE, BSE          \/\/ vertex neighbors$/;"	e	enum:octomap::OcTreeLUT::__anon1
+BS	OcTreeLUT.h	/^      SW, NW, SE, NE, TW, BW, TE, BE, TN, TS, BN, BS, \/\/ edge neighbors$/;"	e	enum:octomap::OcTreeLUT::__anon1
+BSE	OcTreeLUT.h	/^      TNW, TSW, TNE, TSE, BNW, BSW, BNE, BSE          \/\/ vertex neighbors$/;"	e	enum:octomap::OcTreeLUT::__anon1
+BSW	OcTreeLUT.h	/^      TNW, TSW, TNE, TSE, BNW, BSW, BNE, BSE          \/\/ vertex neighbors$/;"	e	enum:octomap::OcTreeLUT::__anon1
+BW	OcTreeLUT.h	/^      SW, NW, SE, NE, TW, BW, TE, BE, TN, TS, BN, BS, \/\/ edge neighbors$/;"	e	enum:octomap::OcTreeLUT::__anon1
+ChangeCells	OccupancyOcTreeBase.h	/^   VecKey* ChangeCells;$/;"	m	class:octomap::OccupancyOcTreeBase
+Color	ColorOcTree.h	/^    Color() : r(255), g(255), b(255) {}$/;"	f	class:octomap::ColorOcTreeNode::Color
+Color	ColorOcTree.h	/^    Color(unsigned char _r, unsigned char _g, unsigned char _b) $/;"	f	class:octomap::ColorOcTreeNode::Color
+Color	ColorOcTree.h	/^    class Color {$/;"	c	class:octomap::ColorOcTreeNode
+ColorOcTree	ColorOcTree.h	/^    ColorOcTree(double resolution) : OccupancyOcTreeBase<ColorOcTreeNode>(resolution) {};  $/;"	f	class:octomap::ColorOcTree
+ColorOcTree	ColorOcTree.h	/^  class ColorOcTree : public OccupancyOcTreeBase <ColorOcTreeNode> {$/;"	c	namespace:octomap
+ColorOcTreeNode	ColorOcTree.h	/^    ColorOcTreeNode() : OcTreeNode() {}$/;"	f	class:octomap::ColorOcTreeNode
+ColorOcTreeNode	ColorOcTree.h	/^    ColorOcTreeNode(const ColorOcTreeNode& rhs) : OcTreeNode(rhs), color(rhs.color) {}$/;"	f	class:octomap::ColorOcTreeNode
+ColorOcTreeNode	ColorOcTree.h	/^  class ColorOcTreeNode : public OcTreeNode {    $/;"	c	namespace:octomap
+CountingOcTree	CountingOcTree.h	/^    CountingOcTree(double resolution) : OcTreeBase<CountingOcTreeNode>(resolution) {};    $/;"	f	class:octomap::CountingOcTree
+CountingOcTree	CountingOcTree.h	/^  class CountingOcTree : public OcTreeBase <CountingOcTreeNode> {$/;"	c	namespace:octomap
+CountingOcTreeNode	CountingOcTree.h	/^  class CountingOcTreeNode : public OcTreeDataNode<unsigned int> {$/;"	c	namespace:octomap
+DEG2RAD	math/Utils.h	47;"	d
+DataType	OcTreeDataNode.h	/^    typedef T DataType;$/;"	t	class:octomap::OcTreeDataNode
+E	OcTreeLUT.h	/^      W = 0, E, N, S , T , B,                         \/\/ face neighbors$/;"	e	enum:octomap::OcTreeLUT::__anon1
+FreeCells	OccupancyOcTreeBase.h	/^   VecKey* FreeCells;$/;"	m	class:octomap::OccupancyOcTreeBase
+KeyBoolMap	OcTreeKey.h	/^  typedef unordered_ns::unordered_map<OcTreeKey, bool, OcTreeKey::KeyHash> KeyBoolMap;$/;"	t	namespace:octomap
+KeyHash	OcTreeKey.h	/^    struct KeyHash{$/;"	s	class:octomap::OcTreeKey
+KeyRay	OcTreeKey.h	/^		  KeyRay () {$/;"	f	class:octomap::KeyRay
+KeyRay	OcTreeKey.h	/^  class KeyRay {$/;"	c	namespace:octomap
+KeySet	OcTreeKey.h	/^  typedef unordered_ns::unordered_set<OcTreeKey, OcTreeKey::KeyHash> KeySet;$/;"	t	namespace:octomap
+LUT_E	OcTreeLUTdefs.h	41;"	d
+LUT_F	OcTreeLUTdefs.h	43;"	d
+LUT_FE	OcTreeLUTdefs.h	55;"	d
+LUT_FE_TO_E	OcTreeLUTdefs.h	88;"	d
+LUT_FE_TO_F	OcTreeLUTdefs.h	87;"	d
+LUT_FN	OcTreeLUTdefs.h	51;"	d
+LUT_FNE	OcTreeLUTdefs.h	61;"	d
+LUT_FNE_TO_E	OcTreeLUTdefs.h	97;"	d
+LUT_FNE_TO_F	OcTreeLUTdefs.h	100;"	d
+LUT_FNE_TO_FE	OcTreeLUTdefs.h	102;"	d
+LUT_FNE_TO_FN	OcTreeLUTdefs.h	101;"	d
+LUT_FNE_TO_N	OcTreeLUTdefs.h	98;"	d
+LUT_FNE_TO_NE	OcTreeLUTdefs.h	99;"	d
+LUT_FNW	OcTreeLUTdefs.h	62;"	d
+LUT_FNW_TO_F	OcTreeLUTdefs.h	108;"	d
+LUT_FNW_TO_FN	OcTreeLUTdefs.h	109;"	d
+LUT_FNW_TO_FW	OcTreeLUTdefs.h	107;"	d
+LUT_FNW_TO_N	OcTreeLUTdefs.h	106;"	d
+LUT_FNW_TO_NW	OcTreeLUTdefs.h	105;"	d
+LUT_FNW_TO_W	OcTreeLUTdefs.h	104;"	d
+LUT_FN_TO_F	OcTreeLUTdefs.h	79;"	d
+LUT_FN_TO_N	OcTreeLUTdefs.h	80;"	d
+LUT_FS	OcTreeLUTdefs.h	53;"	d
+LUT_FSE	OcTreeLUTdefs.h	63;"	d
+LUT_FSE_TO_E	OcTreeLUTdefs.h	113;"	d
+LUT_FSE_TO_F	OcTreeLUTdefs.h	115;"	d
+LUT_FSE_TO_FE	OcTreeLUTdefs.h	116;"	d
+LUT_FSE_TO_FS	OcTreeLUTdefs.h	114;"	d
+LUT_FSE_TO_S	OcTreeLUTdefs.h	111;"	d
+LUT_FSE_TO_SE	OcTreeLUTdefs.h	112;"	d
+LUT_FSW	OcTreeLUTdefs.h	64;"	d
+LUT_FSW_TO_F	OcTreeLUTdefs.h	123;"	d
+LUT_FSW_TO_FS	OcTreeLUTdefs.h	121;"	d
+LUT_FSW_TO_FW	OcTreeLUTdefs.h	122;"	d
+LUT_FSW_TO_S	OcTreeLUTdefs.h	119;"	d
+LUT_FSW_TO_SW	OcTreeLUTdefs.h	118;"	d
+LUT_FSW_TO_W	OcTreeLUTdefs.h	120;"	d
+LUT_FS_TO_F	OcTreeLUTdefs.h	83;"	d
+LUT_FS_TO_S	OcTreeLUTdefs.h	84;"	d
+LUT_FW	OcTreeLUTdefs.h	56;"	d
+LUT_FW_TO_F	OcTreeLUTdefs.h	89;"	d
+LUT_FW_TO_W	OcTreeLUTdefs.h	90;"	d
+LUT_N	OcTreeLUTdefs.h	39;"	d
+LUT_NE	OcTreeLUTdefs.h	48;"	d
+LUT_NE_TO_E	OcTreeLUTdefs.h	73;"	d
+LUT_NE_TO_N	OcTreeLUTdefs.h	74;"	d
+LUT_NO_REC	OcTreeLUTdefs.h	155;"	d
+LUT_NW	OcTreeLUTdefs.h	47;"	d
+LUT_NW_TO_N	OcTreeLUTdefs.h	72;"	d
+LUT_NW_TO_W	OcTreeLUTdefs.h	71;"	d
+LUT_R	OcTreeLUTdefs.h	44;"	d
+LUT_RE	OcTreeLUTdefs.h	57;"	d
+LUT_RE_TO_E	OcTreeLUTdefs.h	92;"	d
+LUT_RE_TO_R	OcTreeLUTdefs.h	91;"	d
+LUT_RN	OcTreeLUTdefs.h	52;"	d
+LUT_RNE	OcTreeLUTdefs.h	65;"	d
+LUT_RNE_TO_E	OcTreeLUTdefs.h	128;"	d
+LUT_RNE_TO_N	OcTreeLUTdefs.h	129;"	d
+LUT_RNE_TO_NE	OcTreeLUTdefs.h	130;"	d
+LUT_RNE_TO_R	OcTreeLUTdefs.h	125;"	d
+LUT_RNE_TO_RE	OcTreeLUTdefs.h	126;"	d
+LUT_RNE_TO_RN	OcTreeLUTdefs.h	127;"	d
+LUT_RNW	OcTreeLUTdefs.h	66;"	d
+LUT_RNW_TO_N	OcTreeLUTdefs.h	137;"	d
+LUT_RNW_TO_NW	OcTreeLUTdefs.h	136;"	d
+LUT_RNW_TO_R	OcTreeLUTdefs.h	133;"	d
+LUT_RNW_TO_RN	OcTreeLUTdefs.h	134;"	d
+LUT_RNW_TO_RW	OcTreeLUTdefs.h	132;"	d
+LUT_RNW_TO_W	OcTreeLUTdefs.h	135;"	d
+LUT_RN_TO_N	OcTreeLUTdefs.h	81;"	d
+LUT_RN_TO_R	OcTreeLUTdefs.h	82;"	d
+LUT_RS	OcTreeLUTdefs.h	54;"	d
+LUT_RSE	OcTreeLUTdefs.h	67;"	d
+LUT_RSE_TO_E	OcTreeLUTdefs.h	144;"	d
+LUT_RSE_TO_R	OcTreeLUTdefs.h	140;"	d
+LUT_RSE_TO_RE	OcTreeLUTdefs.h	141;"	d
+LUT_RSE_TO_RS	OcTreeLUTdefs.h	139;"	d
+LUT_RSE_TO_S	OcTreeLUTdefs.h	142;"	d
+LUT_RSE_TO_SE	OcTreeLUTdefs.h	143;"	d
+LUT_RSW	OcTreeLUTdefs.h	68;"	d
+LUT_RSW_TO_R	OcTreeLUTdefs.h	148;"	d
+LUT_RSW_TO_RS	OcTreeLUTdefs.h	146;"	d
+LUT_RSW_TO_RW	OcTreeLUTdefs.h	147;"	d
+LUT_RSW_TO_S	OcTreeLUTdefs.h	150;"	d
+LUT_RSW_TO_SW	OcTreeLUTdefs.h	149;"	d
+LUT_RSW_TO_W	OcTreeLUTdefs.h	151;"	d
+LUT_RS_TO_R	OcTreeLUTdefs.h	85;"	d
+LUT_RS_TO_S	OcTreeLUTdefs.h	86;"	d
+LUT_RW	OcTreeLUTdefs.h	58;"	d
+LUT_RW_TO_R	OcTreeLUTdefs.h	93;"	d
+LUT_RW_TO_W	OcTreeLUTdefs.h	94;"	d
+LUT_S	OcTreeLUTdefs.h	40;"	d
+LUT_SE	OcTreeLUTdefs.h	50;"	d
+LUT_SELF	OcTreeLUTdefs.h	153;"	d
+LUT_SE_TO_E	OcTreeLUTdefs.h	77;"	d
+LUT_SE_TO_S	OcTreeLUTdefs.h	78;"	d
+LUT_SW	OcTreeLUTdefs.h	49;"	d
+LUT_SW_TO_S	OcTreeLUTdefs.h	75;"	d
+LUT_SW_TO_W	OcTreeLUTdefs.h	76;"	d
+LUT_W	OcTreeLUTdefs.h	42;"	d
+M_PI	math/Utils.h	38;"	d
+M_PI_2	math/Utils.h	42;"	d
+MapCollection	MapCollection.h	/^  class MapCollection {$/;"	c	namespace:octomap
+MapCollection	MapCollection.hxx	/^  MapCollection<MAPNODE>::MapCollection() {$/;"	f	class:octomap::MapCollection
+MapCollection	MapCollection.hxx	/^  MapCollection<MAPNODE>::MapCollection(std::string filename) {$/;"	f	class:octomap::MapCollection
+MapNode	MapNode.h	/^    class MapNode {$/;"	c	namespace:octomap
+MapNode	MapNode.hxx	/^  MapNode<TREETYPE>::MapNode(): node_map(0) {$/;"	f	class:octomap::MapNode
+MapNode	MapNode.hxx	/^  MapNode<TREETYPE>::MapNode(TREETYPE* node_map, pose6d origin) {$/;"	f	class:octomap::MapNode
+MapNode	MapNode.hxx	/^  MapNode<TREETYPE>::MapNode(const Pointcloud& cloud, pose6d origin): node_map(0) {$/;"	f	class:octomap::MapNode
+MapNode	MapNode.hxx	/^  MapNode<TREETYPE>::MapNode(std::string filename, pose6d origin): node_map(0){$/;"	f	class:octomap::MapNode
+N	OcTreeLUT.h	/^      W = 0, E, N, S , T , B,                         \/\/ face neighbors$/;"	e	enum:octomap::OcTreeLUT::__anon1
+NE	OcTreeLUT.h	/^      SW, NW, SE, NE, TW, BW, TE, BE, TN, TS, BN, BS, \/\/ edge neighbors$/;"	e	enum:octomap::OcTreeLUT::__anon1
+NW	OcTreeLUT.h	/^      SW, NW, SE, NE, TW, BW, TE, BE, TN, TS, BN, BS, \/\/ edge neighbors$/;"	e	enum:octomap::OcTreeLUT::__anon1
+NeighborDirection	OcTreeLUT.h	/^    } NeighborDirection;$/;"	t	class:octomap::OcTreeLUT	typeref:enum:octomap::OcTreeLUT::__anon1
+NodeMap	OccupancyOcTreeBase.h	/^   typedef unordered_ns::unordered_map<OcTreeKey,NODE*,OcTreeKey::KeyHash> NodeMap;$/;"	t	class:octomap::OccupancyOcTreeBase
+NodeMap_it	OccupancyOcTreeBase.h	/^   typedef typename unordered_ns::unordered_map<OcTreeKey,NODE*,OcTreeKey::KeyHash>::const_iterator NodeMap_it;$/;"	t	class:octomap::OccupancyOcTreeBase
+NodeType	OcTreeBaseImpl.h	/^    typedef NODE NodeType;$/;"	t	class:octomap::OcTreeBaseImpl
+OCTOMAP_ABSTRACT_OCCUPANCY_OCTREE_H	AbstractOccupancyOcTree.h	35;"	d
+OCTOMAP_ABSTRACT_OCTREE_H	AbstractOcTree.h	35;"	d
+OCTOMAP_COLOR_OCTREE_H	ColorOcTree.h	35;"	d
+OCTOMAP_COUNTING_OCTREE_HH	CountingOcTree.h	35;"	d
+OCTOMAP_DEBUG	octomap_types.h	64;"	d
+OCTOMAP_DEBUG_STR	octomap_types.h	65;"	d
+OCTOMAP_DEPRECATED	OccupancyOcTreeBase.h	/^     OCTOMAP_DEPRECATED( virtual void insertScanNaive(const Pointcloud& scan, const point3d& sensor_origin, double maxrange, bool lazy_eval = false)){$/;"	f	class:octomap::OccupancyOcTreeBase
+OCTOMAP_DEPRECATED	OccupancyOcTreeBase.h	/^     OCTOMAP_DEPRECATED(virtual void insertScan(const ScanNode& scan, double maxrange=-1., bool pruning = true, bool lazy_eval = false)){$/;"	f	class:octomap::OccupancyOcTreeBase
+OCTOMAP_DEPRECATED	OccupancyOcTreeBase.h	/^    OCTOMAP_DEPRECATED(virtual void insertScan(const Pointcloud& scan, const octomap::point3d& sensor_origin,$/;"	f	class:octomap::OccupancyOcTreeBase
+OCTOMAP_DEPRECATED	OccupancyOcTreeBase.h	/^    OCTOMAP_DEPRECATED(virtual void insertScan(const Pointcloud& scan, const point3d& sensor_origin,$/;"	f	class:octomap::OccupancyOcTreeBase
+OCTOMAP_DEPRECATED	octomap_deprecated.h	40;"	d
+OCTOMAP_DEPRECATED	octomap_deprecated.h	42;"	d
+OCTOMAP_DEPRECATED	octomap_deprecated.h	45;"	d
+OCTOMAP_DEPRECATED_H	octomap_deprecated.h	35;"	d
+OCTOMAP_ERROR	octomap_types.h	68;"	d
+OCTOMAP_ERROR_STR	octomap_types.h	69;"	d
+OCTOMAP_MAP_COLLECTION_H	MapCollection.h	35;"	d
+OCTOMAP_MAP_NODE_H	MapNode.h	35;"	d
+OCTOMAP_MCTABLES_H	MCTables.h	34;"	d
+OCTOMAP_OCCUPANCY_OCTREE_BASE_H	OccupancyOcTreeBase.h	35;"	d
+OCTOMAP_OCTREEITERATOR_HXX_	OcTreeIterator.hxx	35;"	d
+OCTOMAP_OCTREE_BASE_H	OcTreeBase.h	35;"	d
+OCTOMAP_OCTREE_BASE_IMPL_H	OcTreeBaseImpl.h	35;"	d
+OCTOMAP_OCTREE_BASE_SE_H	OcTreeBaseSE.h	35;"	d
+OCTOMAP_OCTREE_DATA_NODE_H	OcTreeDataNode.h	35;"	d
+OCTOMAP_OCTREE_H	OcTree.h	35;"	d
+OCTOMAP_OCTREE_KEY_H	OcTreeKey.h	35;"	d
+OCTOMAP_OCTREE_LUT_H	OcTreeLUT.h	35;"	d
+OCTOMAP_OCTREE_NODE_H	OcTreeNode.h	35;"	d
+OCTOMAP_OCTREE_STAMPED_H	OcTreeStamped.h	35;"	d
+OCTOMAP_POINTCLOUD_H	Pointcloud.h	35;"	d
+OCTOMAP_SCANGRAPH_H	ScanGraph.h	35;"	d
+OCTOMAP_TIMING_H_	octomap_timing.h	35;"	d
+OCTOMAP_TYPES_H	octomap_types.h	35;"	d
+OCTOMAP_UTILS_H_	octomap_utils.h	35;"	d
+OCTOMAP_WARNING	octomap_types.h	66;"	d
+OCTOMAP_WARNING_STR	octomap_types.h	67;"	d
+OCTOMATH_POSE6D_H	math/Pose6D.h	35;"	d
+OCTOMATH_QUATERNION_H	math/Quaternion.h	35;"	d
+OCTOMATH_UTILS_H	math/Utils.h	35;"	d
+OCTOMATH_VECTOR3_H	math/Vector3.h	35;"	d
+OcTree	OcTree.h	/^    OcTree(double resolution) : OccupancyOcTreeBase<OcTreeNode>(resolution) {};$/;"	f	class:octomap::OcTree
+OcTree	OcTree.h	/^  class OcTree : public OccupancyOcTreeBase <OcTreeNode> {$/;"	c	namespace:octomap
+OcTreeBase	OcTreeBase.h	/^    OcTreeBase<NODE>(double res) : OcTreeBaseImpl<NODE,AbstractOcTree>(res) {};$/;"	f	class:octomap::OcTreeBase
+OcTreeBase	OcTreeBase.h	/^  class OcTreeBase : public OcTreeBaseImpl<NODE,AbstractOcTree> {$/;"	c	namespace:octomap
+OcTreeBaseImpl	OcTreeBaseImpl.h	/^  class OcTreeBaseImpl : public INTERFACE {$/;"	c	namespace:octomap
+OcTreeBaseImpl	OcTreeBaseImpl.hxx	/^  OcTreeBaseImpl<NODE,I>::OcTreeBaseImpl(const OcTreeBaseImpl<NODE,I>& rhs) :$/;"	f	class:octomap::OcTreeBaseImpl
+OcTreeBaseImpl	OcTreeBaseImpl.hxx	/^  OcTreeBaseImpl<NODE,I>::OcTreeBaseImpl(double resolution) :$/;"	f	class:octomap::OcTreeBaseImpl
+OcTreeBaseImpl	OcTreeBaseImpl.hxx	/^  OcTreeBaseImpl<NODE,I>::OcTreeBaseImpl(double resolution, unsigned int tree_depth, unsigned int tree_max_val) :$/;"	f	class:octomap::OcTreeBaseImpl
+OcTreeBaseSE	OcTreeBaseSE.h	/^    class OcTreeBaseSE: public OcTreeBase<NODE> {$/;"	c	namespace:octomap
+OcTreeBaseSE	OcTreeBaseSE.hxx	/^  OcTreeBaseSE<NODE>::OcTreeBaseSE (double _resolution) :$/;"	f	class:octomap::OcTreeBaseSE
+OcTreeDataNode	OcTreeDataNode.h	/^  template<typename T> class OcTreeDataNode: public AbstractOcTreeNode {$/;"	c	namespace:octomap
+OcTreeDataNode	OcTreeDataNode.hxx	/^  OcTreeDataNode<T>::OcTreeDataNode()$/;"	f	class:octomap::OcTreeDataNode
+OcTreeDataNode	OcTreeDataNode.hxx	/^  OcTreeDataNode<T>::OcTreeDataNode(T initVal)$/;"	f	class:octomap::OcTreeDataNode
+OcTreeDataNode	OcTreeDataNode.hxx	/^  OcTreeDataNode<T>::OcTreeDataNode(const OcTreeDataNode<T>& rhs)$/;"	f	class:octomap::OcTreeDataNode
+OcTreeKey	OcTreeKey.h	/^    OcTreeKey () {}$/;"	f	class:octomap::OcTreeKey
+OcTreeKey	OcTreeKey.h	/^    OcTreeKey (unsigned short int a, unsigned short int b, unsigned short int c)$/;"	f	class:octomap::OcTreeKey
+OcTreeKey	OcTreeKey.h	/^    OcTreeKey(const OcTreeKey& other){$/;"	f	class:octomap::OcTreeKey
+OcTreeKey	OcTreeKey.h	/^  class OcTreeKey {$/;"	c	namespace:octomap
+OcTreeLUT	OcTreeLUT.h	/^  class OcTreeLUT {$/;"	c	namespace:octomap
+OcTreeNode	OcTreeNode.h	/^  class OcTreeNode : public OcTreeDataNode<float> {$/;"	c	namespace:octomap
+OcTreeNodeStamped	OcTreeStamped.h	/^    OcTreeNodeStamped() : OcTreeNode(), timestamp(0) {}$/;"	f	class:octomap::OcTreeNodeStamped
+OcTreeNodeStamped	OcTreeStamped.h	/^    OcTreeNodeStamped(const OcTreeNodeStamped& rhs) : OcTreeNode(rhs), timestamp(rhs.timestamp) {}$/;"	f	class:octomap::OcTreeNodeStamped
+OcTreeNodeStamped	OcTreeStamped.h	/^  class OcTreeNodeStamped : public OcTreeNode {    $/;"	c	namespace:octomap
+OcTreeStamped	OcTreeStamped.h	/^    OcTreeStamped(double resolution) : OccupancyOcTreeBase<OcTreeNodeStamped>(resolution) {};    $/;"	f	class:octomap::OcTreeStamped
+OcTreeStamped	OcTreeStamped.h	/^  class OcTreeStamped : public OccupancyOcTreeBase <OcTreeNodeStamped> {    $/;"	c	namespace:octomap
+OcTreeVolume	octomap_types.h	/^  typedef std::pair<point3d, double> OcTreeVolume;$/;"	t	namespace:octomap
+OccuCells	OccupancyOcTreeBase.h	/^   VecKey* OccuCells;$/;"	m	class:octomap::OccupancyOcTreeBase
+OccupancyOcTreeBase	OccupancyOcTreeBase.h	/^  class OccupancyOcTreeBase : public OcTreeBaseImpl<NODE,AbstractOccupancyOcTree> {$/;"	c	namespace:octomap
+OccupancyOcTreeBase	OccupancyOcTreeBase.hxx	/^  OccupancyOcTreeBase<NODE>::OccupancyOcTreeBase(const OccupancyOcTreeBase<NODE>& rhs) :$/;"	f	class:octomap::OccupancyOcTreeBase
+OccupancyOcTreeBase	OccupancyOcTreeBase.hxx	/^  OccupancyOcTreeBase<NODE>::OccupancyOcTreeBase(double resolution)$/;"	f	class:octomap::OccupancyOcTreeBase
+OccupancyOcTreeBase	OccupancyOcTreeBase.hxx	/^  OccupancyOcTreeBase<NODE>::OccupancyOcTreeBase(double resolution, unsigned int tree_depth, unsigned int tree_max_val)$/;"	f	class:octomap::OccupancyOcTreeBase
+Pointcloud	Pointcloud.h	/^  class Pointcloud {$/;"	c	namespace:octomap
+Pose6D	math/Pose6D.h	/^  class Pose6D {$/;"	c	namespace:octomath
+Quaternion	math/Quaternion.h	/^    inline Quaternion() { u() = 1;  x() = 0; y() = 0; z() = 0;  }$/;"	f	class:octomath::Quaternion
+Quaternion	math/Quaternion.h	/^  class Quaternion {$/;"	c	namespace:octomath
+RAD2DEG	math/Utils.h	51;"	d
+S	OcTreeLUT.h	/^      W = 0, E, N, S , T , B,                         \/\/ face neighbors$/;"	e	enum:octomap::OcTreeLUT::__anon1
+SE	OcTreeLUT.h	/^      SW, NW, SE, NE, TW, BW, TE, BE, TN, TS, BN, BS, \/\/ edge neighbors$/;"	e	enum:octomap::OcTreeLUT::__anon1
+SW	OcTreeLUT.h	/^      SW, NW, SE, NE, TW, BW, TE, BE, TN, TS, BN, BS, \/\/ edge neighbors$/;"	e	enum:octomap::OcTreeLUT::__anon1
+ScanEdge	ScanGraph.h	/^    ScanEdge() {}$/;"	f	class:octomap::ScanEdge
+ScanEdge	ScanGraph.h	/^    ScanEdge(ScanNode* _first, ScanNode* _second, pose6d _constraint)$/;"	f	class:octomap::ScanEdge
+ScanEdge	ScanGraph.h	/^  class ScanEdge {$/;"	c	namespace:octomap
+ScanGraph	ScanGraph.h	/^    ScanGraph() {};$/;"	f	class:octomap::ScanGraph
+ScanGraph	ScanGraph.h	/^  class ScanGraph {$/;"	c	namespace:octomap
+ScanNode	ScanGraph.h	/^    ScanNode ()$/;"	f	class:octomap::ScanNode
+ScanNode	ScanGraph.h	/^    ScanNode (Pointcloud* _scan, pose6d _pose, unsigned int _id)$/;"	f	class:octomap::ScanNode
+ScanNode	ScanGraph.h	/^  class ScanNode {$/;"	c	namespace:octomap
+StackElement	OcTreeIterator.hxx	/^      struct StackElement{$/;"	s	class:iterator_base
+StaticMemberInitializer	ColorOcTree.h	/^         StaticMemberInitializer() {$/;"	f	class:octomap::ColorOcTree::StaticMemberInitializer
+StaticMemberInitializer	ColorOcTree.h	/^    class StaticMemberInitializer{$/;"	c	class:octomap::ColorOcTree
+StaticMemberInitializer	CountingOcTree.h	/^         StaticMemberInitializer() {$/;"	f	class:octomap::CountingOcTree::StaticMemberInitializer
+StaticMemberInitializer	CountingOcTree.h	/^    class StaticMemberInitializer{$/;"	c	class:octomap::CountingOcTree
+StaticMemberInitializer	OcTree.h	/^      StaticMemberInitializer() {$/;"	f	class:octomap::OcTree::StaticMemberInitializer
+StaticMemberInitializer	OcTree.h	/^    class StaticMemberInitializer{$/;"	c	class:octomap::OcTree
+StaticMemberInitializer	OcTreeStamped.h	/^      StaticMemberInitializer() {$/;"	f	class:octomap::OcTreeStamped::StaticMemberInitializer
+StaticMemberInitializer	OcTreeStamped.h	/^    class StaticMemberInitializer{$/;"	c	class:octomap::OcTreeStamped
+T	OcTreeLUT.h	/^      W = 0, E, N, S , T , B,                         \/\/ face neighbors$/;"	e	enum:octomap::OcTreeLUT::__anon1
+TE	OcTreeLUT.h	/^      SW, NW, SE, NE, TW, BW, TE, BE, TN, TS, BN, BS, \/\/ edge neighbors$/;"	e	enum:octomap::OcTreeLUT::__anon1
+TIME_TRACKER_H	TimeTracker.h	18;"	d
+TN	OcTreeLUT.h	/^      SW, NW, SE, NE, TW, BW, TE, BE, TN, TS, BN, BS, \/\/ edge neighbors$/;"	e	enum:octomap::OcTreeLUT::__anon1
+TNE	OcTreeLUT.h	/^      TNW, TSW, TNE, TSE, BNW, BSW, BNE, BSE          \/\/ vertex neighbors$/;"	e	enum:octomap::OcTreeLUT::__anon1
+TNW	OcTreeLUT.h	/^      TNW, TSW, TNE, TSE, BNW, BSW, BNE, BSE          \/\/ vertex neighbors$/;"	e	enum:octomap::OcTreeLUT::__anon1
+TS	OcTreeLUT.h	/^      SW, NW, SE, NE, TW, BW, TE, BE, TN, TS, BN, BS, \/\/ edge neighbors$/;"	e	enum:octomap::OcTreeLUT::__anon1
+TSE	OcTreeLUT.h	/^      TNW, TSW, TNE, TSE, BNW, BSW, BNE, BSE          \/\/ vertex neighbors$/;"	e	enum:octomap::OcTreeLUT::__anon1
+TSW	OcTreeLUT.h	/^      TNW, TSW, TNE, TSE, BNW, BSW, BNE, BSE          \/\/ vertex neighbors$/;"	e	enum:octomap::OcTreeLUT::__anon1
+TW	OcTreeLUT.h	/^      SW, NW, SE, NE, TW, BW, TE, BE, TN, TS, BN, BS, \/\/ edge neighbors$/;"	e	enum:octomap::OcTreeLUT::__anon1
+TimeTracker	TimeTracker.h	/^class TimeTracker$/;"	c
+TreeType	MapNode.h	/^    typedef TREETYPE TreeType;$/;"	t	class:octomap::MapNode
+VecCell	OccupancyOcTreeBase.h	/^   VecKey* VecCell;$/;"	m	class:octomap::OccupancyOcTreeBase
+VecKey	OccupancyOcTreeBase.h	/^   typedef typename std::vector<OcTreeKey> VecKey;$/;"	t	class:octomap::OccupancyOcTreeBase
+Vector3	math/Vector3.h	/^    Vector3 () { data[0] = data[1] = data[2] = 0.0; }$/;"	f	class:octomath::Vector3
+Vector3	math/Vector3.h	/^    Vector3 (const Vector3& other) {$/;"	f	class:octomath::Vector3
+Vector3	math/Vector3.h	/^    Vector3 (float x, float y, float z) {$/;"	f	class:octomath::Vector3
+Vector3	math/Vector3.h	/^  class Vector3 {$/;"	c	namespace:octomath
+W	OcTreeLUT.h	/^      W = 0, E, N, S , T , B,                         \/\/ face neighbors$/;"	e	enum:octomap::OcTreeLUT::__anon1
+addKey	OcTreeKey.h	/^		  void addKey(OcTreeKey& k) {$/;"	f	class:octomap::KeyRay
+addNode	MapCollection.hxx	/^  MAPNODE* MapCollection<MAPNODE>::addNode(const Pointcloud& cloud, point3d sensor_origin) {$/;"	f	class:octomap::MapCollection
+addNode	MapCollection.hxx	/^  void MapCollection<MAPNODE>::addNode( MAPNODE* node){$/;"	f	class:octomap::MapCollection
+adjustKeyAtDepth	OcTreeBaseImpl.h	/^    inline OcTreeKey adjustKeyAtDepth(const OcTreeKey& key, unsigned int depth) const{$/;"	f	class:octomap::OcTreeBaseImpl
+adjustKeyAtDepth	OcTreeBaseImpl.hxx	/^  unsigned short int OcTreeBaseImpl<NODE,I>::adjustKeyAtDepth(unsigned short int key, unsigned int depth) const{$/;"	f	class:octomap::OcTreeBaseImpl
+allChangeCell	OccupancyOcTreeBase.h	/^   VecKey allFreeCell,allOccuCell,allChangeCell; $/;"	m	class:octomap::OccupancyOcTreeBase
+allFreeCell	OccupancyOcTreeBase.h	/^   VecKey allFreeCell,allOccuCell,allChangeCell; $/;"	m	class:octomap::OccupancyOcTreeBase
+allOccuCell	OccupancyOcTreeBase.h	/^   VecKey allFreeCell,allOccuCell,allChangeCell; $/;"	m	class:octomap::OccupancyOcTreeBase
+allocChildren	OcTreeDataNode.hxx	/^  void OcTreeDataNode<T>::allocChildren() {$/;"	f	class:octomap::OcTreeDataNode
+angleTo	math/Vector3.h	/^    inline double angleTo(const Vector3& other) const { $/;"	f	class:octomath::Vector3
+associate	MapCollection.hxx	/^  MAPNODE* MapCollection<MAPNODE>::associate(const Pointcloud& scan) {$/;"	f	class:octomap::MapCollection
+averageNodeColor	ColorOcTree.h	/^    ColorOcTreeNode* averageNodeColor(const float& x, const float& y, $/;"	f	class:octomap::ColorOcTree
+b	ColorOcTree.h	/^      unsigned char r, g, b;$/;"	m	class:octomap::ColorOcTreeNode::Color
+back	Pointcloud.h	/^    point3d back()  { return points.back(); }$/;"	f	class:octomap::Pointcloud
+bbxSet	OccupancyOcTreeBase.h	/^    bool bbxSet() const { return use_bbx_limit; }$/;"	f	class:octomap::OccupancyOcTreeBase
+bbx_max	OccupancyOcTreeBase.h	/^    point3d bbx_max;$/;"	m	class:octomap::OccupancyOcTreeBase
+bbx_max_key	OccupancyOcTreeBase.h	/^    OcTreeKey bbx_max_key;$/;"	m	class:octomap::OccupancyOcTreeBase
+bbx_min	OccupancyOcTreeBase.h	/^    point3d bbx_min;$/;"	m	class:octomap::OccupancyOcTreeBase
+bbx_min_key	OccupancyOcTreeBase.h	/^    OcTreeKey bbx_min_key;$/;"	m	class:octomap::OccupancyOcTreeBase
+begin	MapCollection.h	/^    const_iterator begin() const { return nodes.begin(); }$/;"	f	class:octomap::MapCollection
+begin	MapCollection.h	/^    iterator begin() { return nodes.begin(); }$/;"	f	class:octomap::MapCollection
+begin	OcTreeBaseImpl.h	/^    iterator begin(unsigned char maxDepth=0) const {return iterator(this, maxDepth);};$/;"	f	class:octomap::OcTreeBaseImpl
+begin	OcTreeKey.h	/^		  const_iterator begin() const { return ray.begin(); }$/;"	f	class:octomap::KeyRay
+begin	OcTreeKey.h	/^		  iterator begin() { return ray.begin(); }$/;"	f	class:octomap::KeyRay
+begin	Pointcloud.h	/^    const_iterator begin() const { return points.begin(); }$/;"	f	class:octomap::Pointcloud
+begin	Pointcloud.h	/^    iterator begin() { return points.begin(); }$/;"	f	class:octomap::Pointcloud
+begin	ScanGraph.h	/^    const_iterator begin() const { return nodes.begin(); }$/;"	f	class:octomap::ScanGraph
+begin	ScanGraph.h	/^    iterator begin() { return nodes.begin(); }$/;"	f	class:octomap::ScanGraph
+begin_leafs	OcTreeBaseImpl.h	/^    leaf_iterator begin_leafs(unsigned char maxDepth=0) const {return leaf_iterator(this, maxDepth);};$/;"	f	class:octomap::OcTreeBaseImpl
+begin_leafs_bbx	OcTreeBaseImpl.h	/^    leaf_bbx_iterator begin_leafs_bbx(const OcTreeKey& min, const OcTreeKey& max, unsigned char maxDepth=0) const {$/;"	f	class:octomap::OcTreeBaseImpl
+begin_leafs_bbx	OcTreeBaseImpl.h	/^    leaf_bbx_iterator begin_leafs_bbx(const point3d& min, const point3d& max, unsigned char maxDepth=0) const {$/;"	f	class:octomap::OcTreeBaseImpl
+begin_tree	OcTreeBaseImpl.h	/^    tree_iterator begin_tree(unsigned char maxDepth=0) const {return tree_iterator(this, maxDepth);}$/;"	f	class:octomap::OcTreeBaseImpl
+binaryFileHeader	AbstractOccupancyOcTree.h	/^    static const std::string binaryFileHeader;$/;"	m	class:octomap::AbstractOccupancyOcTree
+calcMinMax	OcTreeBaseImpl.hxx	/^	  void OcTreeBaseImpl<NODE,I>::calcMinMax() {$/;"	f	class:octomap::OcTreeBaseImpl
+calcNumNodes	OcTreeBaseImpl.hxx	/^	  size_t OcTreeBaseImpl<NODE,I>::calcNumNodes() const {$/;"	f	class:octomap::OcTreeBaseImpl
+calcNumNodesRecurs	OcTreeBaseImpl.hxx	/^	  void OcTreeBaseImpl<NODE,I>::calcNumNodesRecurs(NODE* node, size_t& num_nodes) const {$/;"	f	class:octomap::OcTreeBaseImpl
+castRay	MapCollection.hxx	/^  bool MapCollection<MAPNODE>::castRay(const point3d& origin, const point3d& direction, point3d& end,$/;"	f	class:octomap::MapCollection
+castRay	OccupancyOcTreeBase.hxx	/^bool OccupancyOcTreeBase<NODE>::castRay(const point3d& origin, const point3d& directionP, point3d& end, $/;"	f	class:octomap::OccupancyOcTreeBase
+changedKeysBegin	OccupancyOcTreeBase.h	/^    KeyBoolMap::const_iterator changedKeysBegin() {return changed_keys.begin();}$/;"	f	class:octomap::OccupancyOcTreeBase
+changedKeysEnd	OccupancyOcTreeBase.h	/^    KeyBoolMap::const_iterator changedKeysEnd() {return changed_keys.end();}$/;"	f	class:octomap::OccupancyOcTreeBase
+changed_keys	OccupancyOcTreeBase.h	/^    KeyBoolMap changed_keys;$/;"	m	class:octomap::OccupancyOcTreeBase
+childExists	OcTreeDataNode.hxx	/^  bool OcTreeDataNode<T>::childExists(unsigned int i) const {$/;"	f	class:octomap::OcTreeDataNode
+children	OcTreeDataNode.h	/^    OcTreeDataNode<T>** children;$/;"	m	class:octomap::OcTreeDataNode
+clamping_thres_max	AbstractOccupancyOcTree.h	/^    float clamping_thres_max;$/;"	m	class:octomap::AbstractOccupancyOcTree
+clamping_thres_min	AbstractOccupancyOcTree.h	/^    float clamping_thres_min;$/;"	m	class:octomap::AbstractOccupancyOcTree
+clear	MapCollection.hxx	/^  void MapCollection<MAPNODE>::clear() {$/;"	f	class:octomap::MapCollection
+clear	MapNode.hxx	/^  void MapNode<TREETYPE>::clear(){$/;"	f	class:octomap::MapNode
+clear	OcTreeBaseImpl.hxx	/^  void OcTreeBaseImpl<NODE,I>::clear() {$/;"	f	class:octomap::OcTreeBaseImpl
+collapsible	OcTreeDataNode.hxx	/^  bool OcTreeDataNode<T>::collapsible() const {$/;"	f	class:octomap::OcTreeDataNode
+color	ColorOcTree.h	/^    Color color;$/;"	m	class:octomap::ColorOcTreeNode
+colorOcTreeMemberInit	ColorOcTree.h	/^    static StaticMemberInitializer colorOcTreeMemberInit;$/;"	m	class:octomap::ColorOcTree
+combinePathAndFilename	MapCollection.hxx	/^  std::string MapCollection<MAPNODE>::combinePathAndFilename(std::string path, std::string filename) {$/;"	f	class:octomap::MapCollection
+computeChildIdx	OcTreeKey.h	/^  inline unsigned char computeChildIdx(const OcTreeKey& key, int depth){$/;"	f	namespace:octomap
+computeChildKey	OcTreeKey.h	/^  inline void computeChildKey (const unsigned int& pos, const unsigned short int& center_offset_key,$/;"	f	namespace:octomap
+computeDiscreteUpdate	OccupancyOcTreeBase.hxx	/^	  void OccupancyOcTreeBase<NODE>::computeDiscreteUpdate(const Pointcloud& scan, const octomap::point3d& origin,$/;"	f	class:octomap::OccupancyOcTreeBase
+computeIndexKey	OcTreeKey.h	/^  inline OcTreeKey computeIndexKey(unsigned short int level, const OcTreeKey& key) {$/;"	f	namespace:octomap
+computeRay	OcTreeBaseImpl.hxx	/^	  bool OcTreeBaseImpl<NODE,I>::computeRay(const point3d& origin, const point3d& end,$/;"	f	class:octomap::OcTreeBaseImpl
+computeRayKeys	OcTreeBaseImpl.hxx	/^  bool OcTreeBaseImpl<NODE,I>::computeRayKeys(const point3d& origin,$/;"	f	class:octomap::OcTreeBaseImpl
+computeRayKeys	OcTreeBaseSE.hxx	/^  bool OcTreeBaseSE<NODE>::computeRayKeys(const point3d& origin, $/;"	f	class:octomap::OcTreeBaseSE
+computeRayKeysfor2d	OcTreeBaseImpl.hxx	/^  bool OcTreeBaseImpl<NODE,I>::computeRayKeysfor2d(const point3d& origin,$/;"	f	class:octomap::OcTreeBaseImpl
+computeUpdate	OccupancyOcTreeBase.hxx	/^	  void OccupancyOcTreeBase<NODE>::computeUpdate(const Pointcloud& scan, const octomap::point3d& origin,$/;"	f	class:octomap::OccupancyOcTreeBase
+computeUpdatefor2d	OccupancyOcTreeBase.hxx	/^	  void OccupancyOcTreeBase<NODE>::computeUpdatefor2d(const Pointcloud& scan, const octomap::point3d& origin,$/;"	f	class:octomap::OccupancyOcTreeBase
+computemykey	OcTreeKey.h	/^    inline void computemykey(int dep,int treedep)$/;"	f	class:octomap::OcTreeKey
+const_edge_iterator	ScanGraph.h	/^    typedef std::vector<ScanEdge*>::const_iterator const_edge_iterator;$/;"	t	class:octomap::ScanGraph
+const_iterator	MapCollection.h	/^    typedef typename std::vector<MAPNODE*>::const_iterator const_iterator;$/;"	t	class:octomap::MapCollection
+const_iterator	OcTreeKey.h	/^		  typedef std::vector<OcTreeKey>::const_iterator const_iterator;$/;"	t	class:octomap::KeyRay
+const_iterator	Pointcloud.h	/^    typedef point3d_collection::const_iterator const_iterator;$/;"	t	class:octomap::Pointcloud
+const_iterator	ScanGraph.h	/^    typedef std::vector<ScanNode*>::const_iterator const_iterator;$/;"	t	class:octomap::ScanGraph
+constraint	ScanGraph.h	/^    pose6d constraint;$/;"	m	class:octomap::ScanEdge
+coordToKey	OcTreeBaseImpl.h	/^    inline OcTreeKey coordToKey(const point3d& coord) const{$/;"	f	class:octomap::OcTreeBaseImpl
+coordToKey	OcTreeBaseImpl.h	/^    inline OcTreeKey coordToKey(const point3d& coord, unsigned depth) const{$/;"	f	class:octomap::OcTreeBaseImpl
+coordToKey	OcTreeBaseImpl.h	/^    inline OcTreeKey coordToKey(double x, double y, double z) const{$/;"	f	class:octomap::OcTreeBaseImpl
+coordToKey	OcTreeBaseImpl.h	/^    inline OcTreeKey coordToKey(double x, double y, double z, unsigned depth) const{$/;"	f	class:octomap::OcTreeBaseImpl
+coordToKey	OcTreeBaseImpl.h	/^    inline unsigned short int coordToKey(double coordinate) const{$/;"	f	class:octomap::OcTreeBaseImpl
+coordToKey	OcTreeBaseImpl.hxx	/^  inline unsigned short int OcTreeBaseImpl<NODE,I>::coordToKey(double coordinate, unsigned depth) const{$/;"	f	class:octomap::OcTreeBaseImpl
+coordToKeyChecked	OcTreeBaseImpl.hxx	/^  bool OcTreeBaseImpl<NODE,I>::coordToKeyChecked(const point3d& point, OcTreeKey& key) const{$/;"	f	class:octomap::OcTreeBaseImpl
+coordToKeyChecked	OcTreeBaseImpl.hxx	/^  bool OcTreeBaseImpl<NODE,I>::coordToKeyChecked(const point3d& point, unsigned depth, OcTreeKey& key) const{$/;"	f	class:octomap::OcTreeBaseImpl
+coordToKeyChecked	OcTreeBaseImpl.hxx	/^  bool OcTreeBaseImpl<NODE,I>::coordToKeyChecked(double coordinate, unsigned depth, unsigned short int& keyval) const {$/;"	f	class:octomap::OcTreeBaseImpl
+coordToKeyChecked	OcTreeBaseImpl.hxx	/^  bool OcTreeBaseImpl<NODE,I>::coordToKeyChecked(double coordinate, unsigned short int& keyval) const {$/;"	f	class:octomap::OcTreeBaseImpl
+coordToKeyChecked	OcTreeBaseImpl.hxx	/^  bool OcTreeBaseImpl<NODE,I>::coordToKeyChecked(double x, double y, double z, OcTreeKey& key) const{$/;"	f	class:octomap::OcTreeBaseImpl
+coordToKeyChecked	OcTreeBaseImpl.hxx	/^  bool OcTreeBaseImpl<NODE,I>::coordToKeyChecked(double x, double y, double z, unsigned depth, OcTreeKey& key) const{$/;"	f	class:octomap::OcTreeBaseImpl
+countingOcTreeMemberInit	CountingOcTree.h	/^    static StaticMemberInitializer countingOcTreeMemberInit;$/;"	m	class:octomap::CountingOcTree
+create	ColorOcTree.h	/^    ColorOcTree* create() const {return new ColorOcTree(resolution); }$/;"	f	class:octomap::ColorOcTree
+create	OcTree.h	/^    OcTree* create() const {return new OcTree(resolution); }$/;"	f	class:octomap::OcTree
+create	OcTreeBase.h	/^    OcTreeBase<NODE>* create() const {return new OcTreeBase<NODE>(this->resolution); }$/;"	f	class:octomap::OcTreeBase
+create	OcTreeStamped.h	/^    OcTreeStamped* create() const {return new OcTreeStamped(resolution); }$/;"	f	class:octomap::OcTreeStamped
+createChild	ColorOcTree.h	/^    bool createChild(unsigned int i) {$/;"	f	class:octomap::ColorOcTreeNode
+createChild	OcTreeDataNode.hxx	/^  bool OcTreeDataNode<T>::createChild(unsigned int i) {$/;"	f	class:octomap::OcTreeDataNode
+createChild	OcTreeStamped.h	/^    bool createChild(unsigned int i) {$/;"	f	class:octomap::OcTreeNodeStamped
+createdep	OccupancyOcTreeBase.h	/^   int createdep; $/;"	m	class:octomap::OccupancyOcTreeBase
+cross	math/Vector3.h	/^    inline Vector3 cross (const Vector3& other) const $/;"	f	class:octomath::Vector3
+current_inv_transform	Pointcloud.h	/^    pose6d               current_inv_transform;$/;"	m	class:octomap::Pointcloud
+data	math/Quaternion.h	/^    float data[4];$/;"	m	class:octomath::Quaternion
+data	math/Vector3.h	/^    float data[3];$/;"	m	class:octomath::Vector3
+deleteChild	OcTreeDataNode.hxx	/^  void OcTreeDataNode<T>::deleteChild(unsigned int i) {$/;"	f	class:octomap::OcTreeDataNode
+deleteNode	OcTreeBaseImpl.hxx	/^  bool OcTreeBaseImpl<NODE,I>::deleteNode(const OcTreeKey& key, unsigned int depth) {$/;"	f	class:octomap::OcTreeBaseImpl
+deleteNode	OcTreeBaseImpl.hxx	/^  bool OcTreeBaseImpl<NODE,I>::deleteNode(const point3d& value, unsigned int depth) {$/;"	f	class:octomap::OcTreeBaseImpl
+deleteNode	OcTreeBaseImpl.hxx	/^  bool OcTreeBaseImpl<NODE,I>::deleteNode(double x, double y, double z, unsigned int depth) {$/;"	f	class:octomap::OcTreeBaseImpl
+deleteNodeRecurs	OcTreeBaseImpl.hxx	/^	  bool OcTreeBaseImpl<NODE,I>::deleteNodeRecurs(NODE* node, unsigned int depth, unsigned int max_depth, const OcTreeKey& key){$/;"	f	class:octomap::OcTreeBaseImpl
+deletedep	OccupancyOcTreeBase.hxx	/^void OccupancyOcTreeBase<NODE>::deletedep(NODE* node,int dep,int type)$/;"	f	class:octomap::OccupancyOcTreeBase
+deleteunsed	OccupancyOcTreeBase.hxx	/^void OccupancyOcTreeBase<NODE>::deleteunsed()$/;"	f	class:octomap::OccupancyOcTreeBase
+depth	OcTreeIterator.hxx	/^        unsigned char depth;$/;"	m	struct:iterator_base::StackElement
+distance	math/Vector3.h	/^    inline double distance (const Vector3& other) const {$/;"	f	class:octomath::Vector3
+distanceXY	math/Vector3.h	/^    inline double distanceXY (const Vector3& other) const {$/;"	f	class:octomath::Vector3
+dot	math/Vector3.h	/^    inline double dot (const Vector3& other) const $/;"	f	class:octomath::Vector3
+duration	TimeTracker.h	/^	int duration() const$/;"	f	class:TimeTracker
+edgeTable	MCTables.h	/^	static const int edgeTable[256]={$/;"	m	namespace:octomap
+edge_iterator	ScanGraph.h	/^    typedef std::vector<ScanEdge*>::iterator edge_iterator;$/;"	t	class:octomap::ScanGraph
+edges	ScanGraph.h	/^    std::vector<ScanEdge*> edges;$/;"	m	class:octomap::ScanGraph
+edges_begin	ScanGraph.h	/^    const_edge_iterator edges_begin() const { return edges.begin(); }$/;"	f	class:octomap::ScanGraph
+edges_begin	ScanGraph.h	/^    edge_iterator edges_begin() { return edges.begin(); }$/;"	f	class:octomap::ScanGraph
+edges_end	ScanGraph.h	/^    const_edge_iterator edges_end() const  { return edges.end(); }$/;"	f	class:octomap::ScanGraph
+edges_end	ScanGraph.h	/^    edge_iterator edges_end()  { return edges.end(); }$/;"	f	class:octomap::ScanGraph
+enableChangeDetection	OccupancyOcTreeBase.h	/^    void enableChangeDetection(bool enable) { use_change_detection = enable; }$/;"	f	class:octomap::OccupancyOcTreeBase
+end	MapCollection.h	/^    const_iterator end() const { return nodes.end(); }$/;"	f	class:octomap::MapCollection
+end	MapCollection.h	/^    iterator end()   { return nodes.end(); }$/;"	f	class:octomap::MapCollection
+end	OcTreeBaseImpl.h	/^    const iterator end() const {return leaf_iterator_end;}; \/\/ TODO: RVE?$/;"	f	class:octomap::OcTreeBaseImpl
+end	OcTreeKey.h	/^		  const_iterator end() const   { return end_of_ray; }$/;"	f	class:octomap::KeyRay
+end	OcTreeKey.h	/^		  iterator end() { return end_of_ray; }$/;"	f	class:octomap::KeyRay
+end	Pointcloud.h	/^    const_iterator end() const  { return points.end(); }$/;"	f	class:octomap::Pointcloud
+end	Pointcloud.h	/^    iterator end()   { return points.end(); }$/;"	f	class:octomap::Pointcloud
+end	ScanGraph.h	/^    const_iterator end() const { return nodes.end(); }$/;"	f	class:octomap::ScanGraph
+end	ScanGraph.h	/^    iterator end()   { return nodes.end(); }$/;"	f	class:octomap::ScanGraph
+end_leafs	OcTreeBaseImpl.h	/^    const leaf_iterator end_leafs() const {return leaf_iterator_end;}$/;"	f	class:octomap::OcTreeBaseImpl
+end_leafs_bbx	OcTreeBaseImpl.h	/^    const leaf_bbx_iterator end_leafs_bbx() const {return leaf_iterator_bbx_end;}$/;"	f	class:octomap::OcTreeBaseImpl
+end_of_ray	OcTreeKey.h	/^		  std::vector<OcTreeKey>::iterator end_of_ray;$/;"	m	class:octomap::KeyRay
+end_tree	OcTreeBaseImpl.h	/^    const tree_iterator end_tree() const {return tree_iterator_end;}$/;"	f	class:octomap::OcTreeBaseImpl
+equal_keys	OcTreeLUT.h	/^  struct equal_keys {$/;"	s	namespace:octomap
+expand	OcTreeBaseImpl.hxx	/^  void OcTreeBaseImpl<NODE,I>::expand() {$/;"	f	class:octomap::OcTreeBaseImpl
+expandNode	OcTreeDataNode.hxx	/^  void OcTreeDataNode<T>::expandNode() {$/;"	f	class:octomap::OcTreeDataNode
+expandRecurs	OcTreeBaseImpl.hxx	/^	  void OcTreeBaseImpl<NODE,I>::expandRecurs(NODE* node, unsigned int depth,$/;"	f	class:octomap::OcTreeBaseImpl
+expandmorenode	OccupancyOcTreeBase.hxx	/^	  void OccupancyOcTreeBase<NODE>::expandmorenode(NODE* node,int dep,int type,int deptype,int key)$/;"	f	class:octomap::OccupancyOcTreeBase
+fileHeader	AbstractOcTree.h	/^    static const std::string fileHeader;$/;"	m	class:octomap::AbstractOcTree
+first	ScanGraph.h	/^    ScanNode* first;$/;"	m	class:octomap::ScanEdge
+g	ColorOcTree.h	/^      unsigned char r, g, b;$/;"	m	class:octomap::ColorOcTreeNode::Color
+generatePointcloud	MapNode.hxx	/^  Pointcloud MapNode<TREETYPE>::generatePointcloud() {$/;"	f	class:octomap::MapNode
+getBBXBounds	OccupancyOcTreeBase.hxx	/^point3d OccupancyOcTreeBase<NODE>::getBBXBounds () const {$/;"	f	class:octomap::OccupancyOcTreeBase
+getBBXCenter	OccupancyOcTreeBase.hxx	/^point3d OccupancyOcTreeBase<NODE>::getBBXCenter () const {$/;"	f	class:octomap::OccupancyOcTreeBase
+getBBXMax	OccupancyOcTreeBase.h	/^    point3d getBBXMax () const { return bbx_max; }$/;"	f	class:octomap::OccupancyOcTreeBase
+getBBXMin	OccupancyOcTreeBase.h	/^    point3d getBBXMin () const { return bbx_min; }$/;"	f	class:octomap::OccupancyOcTreeBase
+getChangeNode	OccupancyOcTreeBase.h	/^    VecKey getChangeNode() {return allChangeCell; }$/;"	f	class:octomap::OccupancyOcTreeBase
+getChild	ColorOcTree.h	/^    inline ColorOcTreeNode* getChild(unsigned int i) {$/;"	f	class:octomap::ColorOcTreeNode
+getChild	ColorOcTree.h	/^    inline const ColorOcTreeNode* getChild(unsigned int i) const {$/;"	f	class:octomap::ColorOcTreeNode
+getChild	CountingOcTree.h	/^    inline CountingOcTreeNode* getChild(unsigned int i) {$/;"	f	class:octomap::CountingOcTreeNode
+getChild	CountingOcTree.h	/^    inline const CountingOcTreeNode* getChild(unsigned int i) const {$/;"	f	class:octomap::CountingOcTreeNode
+getChild	OcTreeDataNode.hxx	/^  OcTreeDataNode<T>* OcTreeDataNode<T>::getChild(unsigned int i) {$/;"	f	class:octomap::OcTreeDataNode
+getChild	OcTreeDataNode.hxx	/^  const OcTreeDataNode<T>* OcTreeDataNode<T>::getChild(unsigned int i) const {$/;"	f	class:octomap::OcTreeDataNode
+getChild	OcTreeNode.h	/^    inline OcTreeNode* getChild(unsigned int i) {$/;"	f	class:octomap::OcTreeNode
+getChild	OcTreeNode.h	/^    inline const OcTreeNode* getChild(unsigned int i) const {$/;"	f	class:octomap::OcTreeNode
+getChild	OcTreeStamped.h	/^    inline OcTreeNodeStamped* getChild(unsigned int i) {$/;"	f	class:octomap::OcTreeNodeStamped
+getChild	OcTreeStamped.h	/^    inline const OcTreeNodeStamped* getChild(unsigned int i) const {$/;"	f	class:octomap::OcTreeNodeStamped
+getClampingThresMax	AbstractOccupancyOcTree.h	/^    double getClampingThresMax() const {return probability(clamping_thres_max); }$/;"	f	class:octomap::AbstractOccupancyOcTree
+getClampingThresMaxLog	AbstractOccupancyOcTree.h	/^    float getClampingThresMaxLog() const {return clamping_thres_max; }$/;"	f	class:octomap::AbstractOccupancyOcTree
+getClampingThresMin	AbstractOccupancyOcTree.h	/^    double getClampingThresMin() const {return probability(clamping_thres_min); }$/;"	f	class:octomap::AbstractOccupancyOcTree
+getClampingThresMinLog	AbstractOccupancyOcTree.h	/^    float getClampingThresMinLog() const {return clamping_thres_min; }$/;"	f	class:octomap::AbstractOccupancyOcTree
+getColor	ColorOcTree.h	/^    Color& getColor() { return color; }$/;"	f	class:octomap::ColorOcTreeNode
+getColor	ColorOcTree.h	/^    inline Color getColor() const { return color; }$/;"	f	class:octomap::ColorOcTreeNode
+getCoordinate	OcTreeIterator.hxx	/^      point3d getCoordinate() const {$/;"	f	class:iterator_base
+getCount	CountingOcTree.h	/^    inline unsigned int getCount() const { return getValue(); }$/;"	f	class:octomap::CountingOcTreeNode
+getDepth	OcTreeIterator.hxx	/^      unsigned getDepth() const {return unsigned(stack.top().depth); }$/;"	f	class:iterator_base
+getFreeupdateNode	OccupancyOcTreeBase.h	/^    VecKey getFreeupdateNode() {return allFreeCell; }$/;"	f	class:octomap::OccupancyOcTreeBase
+getId	MapNode.h	/^    inline std::string getId() { return id; }$/;"	f	class:octomap::MapNode
+getIndexKey	OcTreeIterator.hxx	/^      OcTreeKey getIndexKey() const {$/;"	f	class:iterator_base
+getKey	OcTreeIterator.hxx	/^      const OcTreeKey& getKey() const {return stack.top().key;}$/;"	f	class:iterator_base
+getLUTNeighbor	OcTreeBaseSE.hxx	/^  NODE* OcTreeBaseSE<NODE>::getLUTNeighbor (const point3d& node_coord, OcTreeLUT::NeighborDirection dir) const {$/;"	f	class:octomap::OcTreeBaseSE
+getLogOdds	OcTreeNode.h	/^    inline float getLogOdds() const{ return value; }$/;"	f	class:octomap::OcTreeNode
+getMap	MapNode.h	/^    TREETYPE* getMap() { return  node_map; }$/;"	f	class:octomap::MapNode
+getMetricMax	OcTreeBaseImpl.hxx	/^	  void OcTreeBaseImpl<NODE,I>::getMetricMax(double& mx, double& my, double& mz) const {$/;"	f	class:octomap::OcTreeBaseImpl
+getMetricMax	OcTreeBaseImpl.hxx	/^	  void OcTreeBaseImpl<NODE,I>::getMetricMax(double& x, double& y, double& z){$/;"	f	class:octomap::OcTreeBaseImpl
+getMetricMaxMin	OcTreeBaseImpl.hxx	/^	  void OcTreeBaseImpl<NODE,I>::getMetricMaxMin(double& maxx, double& maxy, double& maxz, double& minx, double& miny, double& minz){$/;"	f	class:octomap::OcTreeBaseImpl
+getMetricMin	OcTreeBaseImpl.hxx	/^	  void OcTreeBaseImpl<NODE,I>::getMetricMin(double& mx, double& my, double& mz) const {$/;"	f	class:octomap::OcTreeBaseImpl
+getMetricMin	OcTreeBaseImpl.hxx	/^	  void OcTreeBaseImpl<NODE,I>::getMetricMin(double& x, double& y, double& z){$/;"	f	class:octomap::OcTreeBaseImpl
+getMetricSize	OcTreeBaseImpl.hxx	/^	  void OcTreeBaseImpl<NODE,I>::getMetricSize(double& x, double& y, double& z) const{$/;"	f	class:octomap::OcTreeBaseImpl
+getMetricSize	OcTreeBaseImpl.hxx	/^	  void OcTreeBaseImpl<NODE,I>::getMetricSize(double& x, double& y, double& z){$/;"	f	class:octomap::OcTreeBaseImpl
+getMinMaxKey	OccupancyOcTreeBase.hxx	/^	  void OccupancyOcTreeBase<NODE>::getMinMaxKey(OcTreeKey& keymin,OcTreeKey& keymax)$/;"	f	class:octomap::OccupancyOcTreeBase
+getNodeSize	OcTreeBaseImpl.h	/^    inline double getNodeSize(unsigned depth) const {assert(depth <= tree_depth); return sizeLookupTable[depth];}$/;"	f	class:octomap::OcTreeBaseImpl
+getNormals	OccupancyOcTreeBase.hxx	/^bool OccupancyOcTreeBase<NODE>::getNormals(const point3d& point, std::vector<point3d>& normals,$/;"	f	class:octomap::OccupancyOcTreeBase
+getNumLeafNodes	OcTreeBaseImpl.hxx	/^	  size_t OcTreeBaseImpl<NODE,I>::getNumLeafNodes() const {$/;"	f	class:octomap::OcTreeBaseImpl
+getNumLeafNodesRecurs	OcTreeBaseImpl.hxx	/^	  size_t OcTreeBaseImpl<NODE,I>::getNumLeafNodesRecurs(const NODE* parent) const {$/;"	f	class:octomap::OcTreeBaseImpl
+getOccupancy	MapCollection.hxx	/^  float MapCollection<MAPNODE>::getOccupancy(const point3d& p) {$/;"	f	class:octomap::MapCollection
+getOccupancy	OcTreeNode.h	/^    inline double getOccupancy() const { return probability(value); }$/;"	f	class:octomap::OcTreeNode
+getOccupancyThres	AbstractOccupancyOcTree.h	/^    double getOccupancyThres() const {return probability(occ_prob_thres_log); }$/;"	f	class:octomap::AbstractOccupancyOcTree
+getOccupancyThresLog	AbstractOccupancyOcTree.h	/^    float getOccupancyThresLog() const {return occ_prob_thres_log; }$/;"	f	class:octomap::AbstractOccupancyOcTree
+getOccuupdateNode	OccupancyOcTreeBase.h	/^    VecKey getOccuupdateNode() {return allOccuCell; }$/;"	f	class:octomap::OccupancyOcTreeBase
+getOrigin	MapNode.h	/^    inline pose6d getOrigin() { return origin; }$/;"	f	class:octomap::MapNode
+getProbHit	AbstractOccupancyOcTree.h	/^    double getProbHit() const {return probability(prob_hit_log); }$/;"	f	class:octomap::AbstractOccupancyOcTree
+getProbHitLog	AbstractOccupancyOcTree.h	/^    float getProbHitLog() const {return prob_hit_log; }$/;"	f	class:octomap::AbstractOccupancyOcTree
+getProbMiss	AbstractOccupancyOcTree.h	/^    double getProbMiss() const {return probability(prob_miss_log); }$/;"	f	class:octomap::AbstractOccupancyOcTree
+getProbMissLog	AbstractOccupancyOcTree.h	/^    float getProbMissLog() const {return prob_miss_log; }$/;"	f	class:octomap::AbstractOccupancyOcTree
+getRayIntersection	OccupancyOcTreeBase.hxx	/^bool OccupancyOcTreeBase<NODE>::getRayIntersection (const point3d& origin, const point3d& direction, const point3d& center,$/;"	f	class:octomap::OccupancyOcTreeBase
+getResolution	OcTreeBaseImpl.h	/^    inline double getResolution() const { return resolution; }$/;"	f	class:octomap::OcTreeBaseImpl
+getRoot	OcTreeBaseImpl.h	/^    inline NODE* getRoot() const { return root; }$/;"	f	class:octomap::OcTreeBaseImpl
+getSize	OcTreeIterator.hxx	/^      double getSize() const {return  tree->getNodeSize(stack.top().depth); }$/;"	f	class:iterator_base
+getTimestamp	OcTreeStamped.h	/^    inline unsigned int getTimestamp() const { return timestamp; }$/;"	f	class:octomap::OcTreeNodeStamped
+getTreeDepth	OcTreeBaseImpl.h	/^    inline unsigned int getTreeDepth () const { return tree_depth; }$/;"	f	class:octomap::OcTreeBaseImpl
+getTreeType	ColorOcTree.h	/^    std::string getTreeType() const {return "ColorOcTree";}$/;"	f	class:octomap::ColorOcTree
+getTreeType	OcTree.h	/^    std::string getTreeType() const {return "OcTree";}$/;"	f	class:octomap::OcTree
+getTreeType	OcTreeBase.h	/^    std::string getTreeType() const {return "OcTreeBase";}$/;"	f	class:octomap::OcTreeBase
+getTreeType	OcTreeBaseImpl.h	/^    std::string getTreeType() const {return "OcTreeBaseImpl";}$/;"	f	class:octomap::OcTreeBaseImpl
+getTreeType	OcTreeStamped.h	/^    std::string getTreeType() const {return "OcTreeStamped";}$/;"	f	class:octomap::OcTreeStamped
+getUnknownLeafCenters	OcTreeBaseImpl.hxx	/^	  void OcTreeBaseImpl<NODE,I>::getUnknownLeafCenters(point3d_list& node_centers, point3d pmin, point3d pmax) const {$/;"	f	class:octomap::OcTreeBaseImpl
+getValue	OcTreeDataNode.h	/^    T getValue() const{return value;};$/;"	f	class:octomap::OcTreeDataNode
+getX	OcTreeIterator.hxx	/^      double getX() const{$/;"	f	class:iterator_base
+getY	OcTreeIterator.hxx	/^      double getY() const{$/;"	f	class:iterator_base
+getZ	OcTreeIterator.hxx	/^      double getZ() const{$/;"	f	class:iterator_base
+getkey	OcTreeKey.h	/^    inline int getkey() const { return mykey; }$/;"	f	class:octomap::OcTreeKey
+gettimeofday	octomap_timing.h	/^  void gettimeofday(struct timeval* t, void* timezone) {$/;"	f
+hasChildren	OcTreeDataNode.hxx	/^  bool OcTreeDataNode<T>::hasChildren() const {$/;"	f	class:octomap::OcTreeDataNode
+hash_key	OcTreeLUT.h	/^  struct hash_key {$/;"	s	namespace:octomap
+hehe	math/Vector3.h	/^    inline void hehe()$/;"	f	class:octomath::Vector3
+id	MapNode.h	/^    std::string  id;$/;"	m	class:octomap::MapNode
+id	ScanGraph.h	/^    unsigned int id;$/;"	m	class:octomap::ScanNode
+inBBX	OccupancyOcTreeBase.hxx	/^bool OccupancyOcTreeBase<NODE>::inBBX(const OcTreeKey& key) const {$/;"	f	class:octomap::OccupancyOcTreeBase
+inBBX	OccupancyOcTreeBase.hxx	/^bool OccupancyOcTreeBase<NODE>::inBBX(const point3d& p) const {$/;"	f	class:octomap::OccupancyOcTreeBase
+increaseCount	CountingOcTree.h	/^    inline void increaseCount() { value++; }$/;"	f	class:octomap::CountingOcTreeNode
+init	OcTreeBaseImpl.hxx	/^  void OcTreeBaseImpl<NODE,I>::init(){$/;"	f	class:octomap::OcTreeBaseImpl
+insertPointCloud	OccupancyOcTreeBase.hxx	/^	  void OccupancyOcTreeBase<NODE>::insertPointCloud(const Pointcloud& pc, const point3d& sensor_origin, const pose6d& frame_origin,$/;"	f	class:octomap::OccupancyOcTreeBase
+insertPointCloud	OccupancyOcTreeBase.hxx	/^	  void OccupancyOcTreeBase<NODE>::insertPointCloud(const Pointcloud& scan, const octomap::point3d& sensor_origin,$/;"	f	class:octomap::OccupancyOcTreeBase
+insertPointCloud	OccupancyOcTreeBase.hxx	/^	  void OccupancyOcTreeBase<NODE>::insertPointCloud(const ScanNode& scan, double maxrange, bool lazy_eval, bool discretize) {$/;"	f	class:octomap::OccupancyOcTreeBase
+insertPointCloudRays	OccupancyOcTreeBase.hxx	/^	  void OccupancyOcTreeBase<NODE>::insertPointCloudRays(const Pointcloud& pc, const point3d& origin, double maxrange, bool lazy_eval) {$/;"	f	class:octomap::OccupancyOcTreeBase
+insertPointCloudfor2d	OccupancyOcTreeBase.hxx	/^	  void OccupancyOcTreeBase<NODE>::insertPointCloudfor2d($/;"	f	class:octomap::OccupancyOcTreeBase
+insertRay	OccupancyOcTreeBase.hxx	/^OccupancyOcTreeBase<NODE>::insertRay(const point3d& origin, const point3d& end, double maxrange, bool lazy_eval)$/;"	f	class:octomap::OccupancyOcTreeBase
+insertScan	MapCollection.hxx	/^  void MapCollection<MAPNODE>::insertScan(const Pointcloud& scan, const octomap::point3d& sensor_origin,$/;"	f	class:octomap::MapCollection
+integrateHit	OccupancyOcTreeBase.hxx	/^void OccupancyOcTreeBase<NODE>::integrateHit(NODE* occupancyNode) const {$/;"	f	class:octomap::OccupancyOcTreeBase
+integrateMiss	OccupancyOcTreeBase.hxx	/^void OccupancyOcTreeBase<NODE>::integrateMiss(NODE* occupancyNode) const {$/;"	f	class:octomap::OccupancyOcTreeBase
+integrateMissOnRay	OccupancyOcTreeBase.hxx	/^OccupancyOcTreeBase<NODE>::integrateMissOnRay(const point3d& origin, const point3d& end, bool lazy_eval) {$/;"	f	class:octomap::OccupancyOcTreeBase
+integrateNodeColor	ColorOcTree.h	/^    ColorOcTreeNode* integrateNodeColor(const float& x, const float& y, $/;"	f	class:octomap::ColorOcTree
+inv	math/Quaternion.h	/^    inline Quaternion inv() const {  return Quaternion(u(), -x(), -y(), -z()); }$/;"	f	class:octomath::Quaternion
+isColorSet	ColorOcTree.h	/^    inline bool isColorSet() const { $/;"	f	class:octomap::ColorOcTreeNode
+isLeaf	OcTreeIterator.hxx	/^      bool isLeaf() const{ return (!this->stack.top().node->hasChildren() || this->stack.top().depth == this->maxDepth); }$/;"	f	class:tree_iterator
+isNodeAtThreshold	AbstractOccupancyOcTree.h	/^    inline bool isNodeAtThreshold(const OcTreeNode& occupancyNode) const{$/;"	f	class:octomap::AbstractOccupancyOcTree
+isNodeAtThreshold	AbstractOccupancyOcTree.h	/^    inline bool isNodeAtThreshold(const OcTreeNode* occupancyNode) const{$/;"	f	class:octomap::AbstractOccupancyOcTree
+isNodeOccupied	AbstractOccupancyOcTree.h	/^    inline bool isNodeOccupied(const OcTreeNode& occupancyNode) const{$/;"	f	class:octomap::AbstractOccupancyOcTree
+isNodeOccupied	AbstractOccupancyOcTree.h	/^    inline bool isNodeOccupied(const OcTreeNode* occupancyNode) const{$/;"	f	class:octomap::AbstractOccupancyOcTree
+isOccupied	MapCollection.hxx	/^  bool MapCollection<MAPNODE>::isOccupied(const point3d& p) const {$/;"	f	class:octomap::MapCollection
+isOccupied	MapCollection.hxx	/^  bool MapCollection<MAPNODE>::isOccupied(float x, float y, float z) const {$/;"	f	class:octomap::MapCollection
+iterator	MapCollection.h	/^    typedef typename std::vector<MAPNODE*>::iterator iterator;$/;"	t	class:octomap::MapCollection
+iterator	OcTreeBaseImpl.h	/^    typedef leaf_iterator iterator;$/;"	t	class:octomap::OcTreeBaseImpl
+iterator	OcTreeKey.h	/^		  typedef std::vector<OcTreeKey>::iterator iterator;$/;"	t	class:octomap::KeyRay
+iterator	Pointcloud.h	/^    typedef point3d_collection::iterator iterator;$/;"	t	class:octomap::Pointcloud
+iterator	ScanGraph.h	/^    typedef std::vector<ScanNode*>::iterator iterator;$/;"	t	class:octomap::ScanGraph
+iterator_base	OcTreeIterator.hxx	/^      iterator_base() : tree(NULL), maxDepth(0){}$/;"	f	class:iterator_base
+iterator_base	OcTreeIterator.hxx	/^      iterator_base(OcTreeBaseImpl<NodeType,INTERFACE> const* tree, unsigned char depth=0)$/;"	f	class:iterator_base
+iterator_base	OcTreeIterator.hxx	/^      iterator_base(const iterator_base& other)$/;"	f	class:iterator_base
+iterator_base	OcTreeIterator.hxx	/^    class iterator_base : public std::iterator<std::forward_iterator_tag, NodeType>{$/;"	c
+k	OcTreeKey.h	/^    unsigned short int k[3];$/;"	m	class:octomap::OcTreeKey
+key	OcTreeIterator.hxx	/^        OcTreeKey key;$/;"	m	struct:iterator_base::StackElement
+keyToCoord	OcTreeBaseImpl.h	/^    inline double keyToCoord(unsigned short int key) const{$/;"	f	class:octomap::OcTreeBaseImpl
+keyToCoord	OcTreeBaseImpl.h	/^    inline point3d keyToCoord(const OcTreeKey& key) const{$/;"	f	class:octomap::OcTreeBaseImpl
+keyToCoord	OcTreeBaseImpl.h	/^    inline point3d keyToCoord(const OcTreeKey& key, unsigned depth) const{$/;"	f	class:octomap::OcTreeBaseImpl
+keyToCoord	OcTreeBaseImpl.hxx	/^  double OcTreeBaseImpl<NODE,I>::keyToCoord(unsigned short int key, unsigned depth) const{$/;"	f	class:octomap::OcTreeBaseImpl
+keyray	OcTreeBaseSE.h	/^    KeyRay keyray;$/;"	m	class:octomap::OcTreeBaseSE
+keyrays	OcTreeBaseImpl.h	/^    std::vector<KeyRay> keyrays;$/;"	m	class:octomap::OcTreeBaseImpl
+leaf_bbx_iterator	OcTreeIterator.hxx	/^      leaf_bbx_iterator() : iterator_base() {};$/;"	f	class:leaf_bbx_iterator
+leaf_bbx_iterator	OcTreeIterator.hxx	/^      leaf_bbx_iterator(OcTreeBaseImpl<NodeType,INTERFACE> const* tree, const OcTreeKey& min, const OcTreeKey& max, unsigned char depth=0)$/;"	f	class:leaf_bbx_iterator
+leaf_bbx_iterator	OcTreeIterator.hxx	/^      leaf_bbx_iterator(OcTreeBaseImpl<NodeType,INTERFACE> const* tree, const point3d& min, const point3d& max, unsigned char depth=0)$/;"	f	class:leaf_bbx_iterator
+leaf_bbx_iterator	OcTreeIterator.hxx	/^      leaf_bbx_iterator(const leaf_bbx_iterator& other) : iterator_base(other) {$/;"	f	class:leaf_bbx_iterator
+leaf_bbx_iterator	OcTreeIterator.hxx	/^    class leaf_bbx_iterator : public iterator_base {$/;"	c
+leaf_iterator	OcTreeIterator.hxx	/^          leaf_iterator() : iterator_base(){}$/;"	f	class:leaf_iterator
+leaf_iterator	OcTreeIterator.hxx	/^          leaf_iterator(OcTreeBaseImpl<NodeType, INTERFACE> const* tree, unsigned char depth=0) : iterator_base(tree, depth) {$/;"	f	class:leaf_iterator
+leaf_iterator	OcTreeIterator.hxx	/^          leaf_iterator(const leaf_iterator& other) : iterator_base(other) {};$/;"	f	class:leaf_iterator
+leaf_iterator	OcTreeIterator.hxx	/^    class leaf_iterator : public iterator_base {$/;"	c
+leaf_iterator_bbx_end	OcTreeBaseImpl.h	/^    const leaf_bbx_iterator leaf_iterator_bbx_end;$/;"	m	class:octomap::OcTreeBaseImpl
+leaf_iterator_end	OcTreeBaseImpl.h	/^    const leaf_iterator leaf_iterator_end;$/;"	m	class:octomap::OcTreeBaseImpl
+logodds	octomap_utils.h	/^  inline float logodds(double probability){$/;"	f	namespace:octomap
+lut	OcTreeBaseSE.h	/^    OcTreeLUT* lut;$/;"	m	class:octomap::OcTreeBaseSE
+max	OcTreeBaseImpl.hxx	34;"	d
+maxDepth	OcTreeIterator.hxx	/^      unsigned char maxDepth; \/\/\/< Maximum depth for depth-limited queries$/;"	m	class:iterator_base
+maxKey	OcTreeIterator.hxx	/^      OcTreeKey maxKey;$/;"	m	class:leaf_bbx_iterator
+max_depth	OcTreeLUT.h	/^    unsigned int max_depth;$/;"	m	class:octomap::OcTreeLUT
+max_value	OcTreeBaseImpl.h	/^    double max_value[3]; \/\/\/< max in x, y, z$/;"	m	class:octomap::OcTreeBaseImpl
+maxkey	OccupancyOcTreeBase.h	/^   int maxkey[3];$/;"	m	class:octomap::OccupancyOcTreeBase
+memoryFullGrid	OcTreeBaseImpl.hxx	/^	  unsigned long long OcTreeBaseImpl<NODE,I>::memoryFullGrid() const{$/;"	f	class:octomap::OcTreeBaseImpl
+memoryUsage	OcTreeBaseImpl.hxx	/^	  size_t OcTreeBaseImpl<NODE,I>::memoryUsage() const{$/;"	f	class:octomap::OcTreeBaseImpl
+memoryUsageNode	OcTreeBaseImpl.h	/^    virtual inline size_t memoryUsageNode() const {return sizeof(NODE); };$/;"	f	class:octomap::OcTreeBaseImpl
+min	OcTreeBaseImpl.hxx	35;"	d
+minKey	OcTreeIterator.hxx	/^      OcTreeKey minKey;$/;"	m	class:leaf_bbx_iterator
+min_value	OcTreeBaseImpl.h	/^    double min_value[3]; \/\/\/< min in x, y, z$/;"	m	class:octomap::OcTreeBaseImpl
+minkey	OccupancyOcTreeBase.h	/^   int minkey[3]; $/;"	m	class:octomap::OccupancyOcTreeBase
+mydep	OcTreeBaseImpl.h	/^	int mydep;$/;"	m	class:octomap::OcTreeBaseImpl
+mykey	OcTreeKey.h	/^    short int mykey;$/;"	m	class:octomap::OcTreeKey
+nf_multiple_values	OcTreeLUT.h	/^    signed char nf_multiple_values[26][4];$/;"	m	class:octomap::OcTreeLUT
+nf_rec_values	OcTreeLUT.h	/^    signed char nf_rec_values[8][26];$/;"	m	class:octomap::OcTreeLUT
+nf_values	OcTreeLUT.h	/^    signed char nf_values[8][26];$/;"	m	class:octomap::OcTreeLUT
+node	OcTreeIterator.hxx	/^        NodeType* node;$/;"	m	struct:iterator_base::StackElement
+nodeToMaxLikelihood	OccupancyOcTreeBase.hxx	/^void OccupancyOcTreeBase<NODE>::nodeToMaxLikelihood(NODE& occupancyNode) const{$/;"	f	class:octomap::OccupancyOcTreeBase
+nodeToMaxLikelihood	OccupancyOcTreeBase.hxx	/^void OccupancyOcTreeBase<NODE>::nodeToMaxLikelihood(NODE* occupancyNode) const{$/;"	f	class:octomap::OccupancyOcTreeBase
+node_map	MapNode.h	/^    TREETYPE*    node_map;  \/\/ occupancy grid map$/;"	m	class:octomap::MapNode
+nodes	MapCollection.h	/^    std::vector<MAPNODE*> nodes;$/;"	m	class:octomap::MapCollection
+nodes	ScanGraph.h	/^    std::vector<ScanNode*> nodes;$/;"	m	class:octomap::ScanGraph
+norm	math/Vector3.h	/^    inline double norm () const {$/;"	f	class:octomath::Vector3
+norm_sq	math/Vector3.h	/^    inline double norm_sq() const {$/;"	f	class:octomath::Vector3
+normalize	math/Vector3.h	/^    inline Vector3& normalize () {$/;"	f	class:octomath::Vector3
+normalized	math/Vector3.h	/^    inline Vector3 normalized () const {$/;"	f	class:octomath::Vector3
+ocTreeMemberInit	OcTree.h	/^    static StaticMemberInitializer ocTreeMemberInit;$/;"	m	class:octomap::OcTree
+ocTreeStampedMemberInit	OcTreeStamped.h	/^    static StaticMemberInitializer ocTreeStampedMemberInit;$/;"	m	class:octomap::OcTreeStamped
+occ_prob_thres_log	AbstractOccupancyOcTree.h	/^    float occ_prob_thres_log;$/;"	m	class:octomap::AbstractOccupancyOcTree
+octomap	AbstractOcTree.h	/^namespace octomap {$/;"	n
+octomap	AbstractOccupancyOcTree.h	/^namespace octomap {$/;"	n
+octomap	ColorOcTree.h	/^namespace octomap {$/;"	n
+octomap	CountingOcTree.h	/^namespace octomap {$/;"	n
+octomap	MCTables.h	/^namespace octomap {$/;"	n
+octomap	MapCollection.h	/^namespace octomap {$/;"	n
+octomap	MapCollection.hxx	/^namespace octomap {$/;"	n
+octomap	MapNode.h	/^namespace octomap {$/;"	n
+octomap	MapNode.hxx	/^namespace octomap {$/;"	n
+octomap	OcTree.h	/^namespace octomap {$/;"	n
+octomap	OcTreeBase.h	/^namespace octomap {$/;"	n
+octomap	OcTreeBaseImpl.h	/^namespace octomap {$/;"	n
+octomap	OcTreeBaseImpl.hxx	/^namespace octomap {$/;"	n
+octomap	OcTreeBaseSE.h	/^namespace octomap {$/;"	n
+octomap	OcTreeBaseSE.hxx	/^namespace octomap {$/;"	n
+octomap	OcTreeDataNode.h	/^namespace octomap {$/;"	n
+octomap	OcTreeDataNode.hxx	/^namespace octomap {$/;"	n
+octomap	OcTreeKey.h	/^  namespace octomap {$/;"	n
+octomap	OcTreeKey.h	/^namespace octomap {$/;"	n
+octomap	OcTreeLUT.h	/^namespace octomap {$/;"	n
+octomap	OcTreeNode.h	/^namespace octomap {$/;"	n
+octomap	OcTreeStamped.h	/^namespace octomap {$/;"	n
+octomap	OccupancyOcTreeBase.h	/^namespace octomap {$/;"	n
+octomap	OccupancyOcTreeBase.hxx	/^namespace octomap {$/;"	n
+octomap	Pointcloud.h	/^namespace octomap {$/;"	n
+octomap	ScanGraph.h	/^namespace octomap {$/;"	n
+octomap	octomap_types.h	/^namespace octomap {$/;"	n
+octomap	octomap_utils.h	/^namespace octomap{$/;"	n
+octomath	math/Pose6D.h	/^namespace octomath {$/;"	n
+octomath	math/Quaternion.h	/^namespace octomath {$/;"	n
+octomath	math/Vector3.h	/^namespace octomath {$/;"	n
+operator !=	ColorOcTree.h	/^      inline bool operator!= (const Color &other) const {$/;"	f	class:octomap::ColorOcTreeNode::Color
+operator !=	OcTreeIterator.hxx	/^      bool operator!=(const iterator_base& other) const {$/;"	f	class:iterator_base
+operator !=	OcTreeKey.h	/^    bool operator!= (const OcTreeKey &other) const {$/;"	f	class:octomap::OcTreeKey
+operator ()	OcTreeKey.h	/^	    size_t operator()(const OcTreeKey& key) const{$/;"	f	struct:octomap::OcTreeKey::KeyHash
+operator ()	OcTreeLUT.h	/^    bool operator() (const unsigned short int* key1, const unsigned short int* key2) const {$/;"	f	struct:octomap::equal_keys
+operator ()	OcTreeLUT.h	/^    unsigned short int operator()(const unsigned short int* key) const {$/;"	f	struct:octomap::hash_key
+operator ()	math/Quaternion.h	/^    inline const float& operator() (unsigned int i) const { return data[i]; }$/;"	f	class:octomath::Quaternion
+operator ()	math/Quaternion.h	/^    inline float& operator() (unsigned int i) { return data[i]; }$/;"	f	class:octomath::Quaternion
+operator ()	math/Vector3.h	/^    inline const float& operator() (unsigned int i) const$/;"	f	class:octomath::Vector3
+operator ()	math/Vector3.h	/^    inline float& operator() (unsigned int i)$/;"	f	class:octomath::Vector3
+operator *	OcTreeIterator.hxx	/^      NodeType& operator*() { return *(stack.top().node);}$/;"	f	class:iterator_base
+operator *	OcTreeIterator.hxx	/^      const NodeType& operator*() const { return *(stack.top().node);}$/;"	f	class:iterator_base
+operator *	math/Vector3.h	/^    inline Vector3 operator*  (float x) const {$/;"	f	class:octomath::Vector3
+operator *=	math/Vector3.h	/^    inline void operator*= (float x) {    $/;"	f	class:octomath::Vector3
+operator +	math/Vector3.h	/^    inline Vector3 operator+ (const Vector3 &other) const $/;"	f	class:octomath::Vector3
+operator ++	OcTreeIterator.hxx	/^          leaf_iterator operator++(int){$/;"	f	class:leaf_iterator
+operator ++	OcTreeIterator.hxx	/^          leaf_iterator& operator++(){$/;"	f	class:leaf_iterator
+operator ++	OcTreeIterator.hxx	/^      leaf_bbx_iterator operator++(int){$/;"	f	class:leaf_bbx_iterator
+operator ++	OcTreeIterator.hxx	/^      leaf_bbx_iterator& operator++(){$/;"	f	class:leaf_bbx_iterator
+operator ++	OcTreeIterator.hxx	/^      tree_iterator operator++(int){$/;"	f	class:tree_iterator
+operator ++	OcTreeIterator.hxx	/^      tree_iterator& operator++(){$/;"	f	class:tree_iterator
+operator +=	math/Vector3.h	/^    inline void operator+= (const Vector3 &other)$/;"	f	class:octomath::Vector3
+operator -	math/Vector3.h	/^    inline Vector3 operator- () const $/;"	f	class:octomath::Vector3
+operator -	math/Vector3.h	/^    inline Vector3 operator- (const Vector3 &other) const $/;"	f	class:octomath::Vector3
+operator -=	math/Vector3.h	/^    inline void operator-= (const Vector3& other) {$/;"	f	class:octomath::Vector3
+operator ->	OcTreeIterator.hxx	/^      NodeType const* operator->() const { return stack.top().node;}$/;"	f	class:iterator_base
+operator ->	OcTreeIterator.hxx	/^      NodeType* operator->() { return stack.top().node;}$/;"	f	class:iterator_base
+operator /=	math/Vector3.h	/^    inline void operator\/= (float x) {$/;"	f	class:octomath::Vector3
+operator =	OcTreeIterator.hxx	/^      iterator_base& operator=(const iterator_base& other){$/;"	f	class:iterator_base
+operator =	OcTreeKey.h	/^    OcTreeKey& operator=(const OcTreeKey& other){$/;"	f	class:octomap::OcTreeKey
+operator =	math/Vector3.h	/^    inline Vector3& operator= (const Vector3& other)  {$/;"	f	class:octomath::Vector3
+operator ==	ColorOcTree.h	/^      inline bool operator== (const Color &other) const {$/;"	f	class:octomap::ColorOcTreeNode::Color
+operator ==	ColorOcTree.h	/^    bool operator==(const ColorOcTreeNode& rhs) const{$/;"	f	class:octomap::ColorOcTreeNode
+operator ==	OcTreeBaseImpl.hxx	/^  bool OcTreeBaseImpl<NODE,I>::operator== (const OcTreeBaseImpl<NODE,I>& other) const{$/;"	f	class:octomap::OcTreeBaseImpl
+operator ==	OcTreeDataNode.hxx	/^  bool OcTreeDataNode<T>::operator== (const OcTreeDataNode<T>& rhs) const{$/;"	f	class:octomap::OcTreeDataNode
+operator ==	OcTreeIterator.hxx	/^      bool operator==(const iterator_base& other) const {$/;"	f	class:iterator_base
+operator ==	OcTreeKey.h	/^    bool operator== (const OcTreeKey &other) const { $/;"	f	class:octomap::OcTreeKey
+operator ==	OcTreeStamped.h	/^    bool operator==(const OcTreeNodeStamped& rhs) const{$/;"	f	class:octomap::OcTreeNodeStamped
+operator ==	ScanGraph.h	/^    bool operator == (const ScanEdge& other) {$/;"	f	class:octomap::ScanEdge
+operator ==	ScanGraph.h	/^    bool operator == (const ScanNode& other) {$/;"	f	class:octomap::ScanNode
+operator ==	math/Vector3.h	/^    inline bool operator== (const Vector3 &other) const {$/;"	f	class:octomath::Vector3
+operator []	OcTreeKey.h	/^    const unsigned short int& operator[] (unsigned int i) const { $/;"	f	class:octomap::OcTreeKey
+operator []	OcTreeKey.h	/^    unsigned short int& operator[] (unsigned int i) { $/;"	f	class:octomap::OcTreeKey
+operator []	Pointcloud.h	/^    inline const point3d& operator[] (size_t i) const { return points[i]; }$/;"	f	class:octomap::Pointcloud
+operator []	Pointcloud.h	/^    inline point3d& operator[] (size_t i) { return points[i]; }$/;"	f	class:octomap::Pointcloud
+origin	MapNode.h	/^    pose6d       origin;    \/\/ origin and orientation relative to parent$/;"	m	class:octomap::MapNode
+pitch	math/Pose6D.h	/^    inline double pitch() const {return (rotation.toEuler())(1); }$/;"	f	class:octomath::Pose6D
+pitch	math/Vector3.h	/^    inline const float& pitch() const $/;"	f	class:octomath::Vector3
+pitch	math/Vector3.h	/^    inline float& pitch() $/;"	f	class:octomath::Vector3
+point3d	octomap_types.h	/^  typedef octomath::Vector3               point3d;$/;"	t	namespace:octomap
+point3d_collection	octomap_types.h	/^  typedef std::vector<octomath::Vector3>  point3d_collection;$/;"	t	namespace:octomap
+point3d_list	octomap_types.h	/^  typedef std::list<octomath::Vector3>    point3d_list;$/;"	t	namespace:octomap
+points	Pointcloud.h	/^    point3d_collection   points;$/;"	m	class:octomap::Pointcloud
+pose	ScanGraph.h	/^    pose6d pose; \/\/\/< 6D pose from which the scan was performed$/;"	m	class:octomap::ScanNode
+pose6d	octomap_types.h	/^  typedef octomath::Pose6D                pose6d;$/;"	t	namespace:octomap
+prob_hit_log	AbstractOccupancyOcTree.h	/^    float prob_hit_log;$/;"	m	class:octomap::AbstractOccupancyOcTree
+prob_miss_log	AbstractOccupancyOcTree.h	/^    float prob_miss_log;$/;"	m	class:octomap::AbstractOccupancyOcTree
+probability	octomap_utils.h	/^  inline double probability(double logodds){$/;"	f	namespace:octomap
+prune	OcTreeBaseImpl.hxx	/^  void OcTreeBaseImpl<NODE,I>::prune() {$/;"	f	class:octomap::OcTreeBaseImpl
+pruneNode	OcTreeDataNode.hxx	/^  bool OcTreeDataNode<T>::pruneNode() {$/;"	f	class:octomap::OcTreeDataNode
+pruneRecurs	OcTreeBaseImpl.hxx	/^	  void OcTreeBaseImpl<NODE,I>::pruneRecurs(NODE* node, unsigned int depth,$/;"	f	class:octomap::OcTreeBaseImpl
+push_back	Pointcloud.h	/^    inline void push_back(const point3d& p) {$/;"	f	class:octomap::Pointcloud
+push_back	Pointcloud.h	/^    inline void push_back(float x, float y, float z) {$/;"	f	class:octomap::Pointcloud
+push_back	Pointcloud.h	/^    inline void push_back(point3d* p) {$/;"	f	class:octomap::Pointcloud
+queryNode	MapCollection.hxx	/^  MAPNODE* MapCollection<MAPNODE>::queryNode(const point3d& p) {$/;"	f	class:octomap::MapCollection
+queryNode	MapCollection.hxx	/^  MAPNODE* MapCollection<MAPNODE>::queryNode(std::string id) {$/;"	f	class:octomap::MapCollection
+r	ColorOcTree.h	/^      unsigned char r, g, b;$/;"	m	class:octomap::ColorOcTreeNode::Color
+ray	OcTreeKey.h	/^		  std::vector<OcTreeKey> ray;$/;"	m	class:octomap::KeyRay
+rbegin	OcTreeKey.h	/^		  reverse_iterator rbegin() { return (reverse_iterator) end_of_ray; }$/;"	f	class:octomap::KeyRay
+read	MapCollection.hxx	/^  bool MapCollection<MAPNODE>::read(std::string filenamefullpath) {$/;"	f	class:octomap::MapCollection
+readBinaryData	OccupancyOcTreeBase.hxx	/^std::istream& OccupancyOcTreeBase<NODE>::readBinaryData(std::istream &s){$/;"	f	class:octomap::OccupancyOcTreeBase
+readBinaryNode	OccupancyOcTreeBase.hxx	/^std::istream& OccupancyOcTreeBase<NODE>::readBinaryNode(std::istream &s, NODE* node) const {$/;"	f	class:octomap::OccupancyOcTreeBase
+readData	OcTreeBaseImpl.hxx	/^	  std::istream& OcTreeBaseImpl<NODE,I>::readData(std::istream &s) {$/;"	f	class:octomap::OcTreeBaseImpl
+readMap	MapNode.hxx	/^  bool MapNode<TREETYPE>::readMap(std::string filename){$/;"	f	class:octomap::MapNode
+readTagValue	MapCollection.hxx	/^  bool MapCollection<MAPNODE>::readTagValue(std::string tag, std::ifstream& infile, std::string* value) {$/;"	f	class:octomap::MapCollection
+readValue	OcTreeDataNode.hxx	/^  std::istream& OcTreeDataNode<T>::readValue(std::istream &s) {$/;"	f	class:octomap::OcTreeDataNode
+readfromroot	OccupancyOcTreeBase.hxx	/^void OccupancyOcTreeBase<NODE>::readfromroot()$/;"	f	class:octomap::OccupancyOcTreeBase
+readtree	OccupancyOcTreeBase.hxx	/^void OccupancyOcTreeBase<NODE>::readtree(NODE* node,int j)$/;"	f	class:octomap::OccupancyOcTreeBase
+recovery	OccupancyOcTreeBase.hxx	/^	  void OccupancyOcTreeBase<NODE>::recovery()$/;"	f	class:octomap::OccupancyOcTreeBase
+recoverynode	OccupancyOcTreeBase.hxx	/^	  void OccupancyOcTreeBase<NODE>::recoverynode(NODE* node,int dep,int deptype,int key)$/;"	f	class:octomap::OccupancyOcTreeBase
+removeNode	MapCollection.hxx	/^  bool MapCollection<MAPNODE>::removeNode(const MAPNODE* n) {$/;"	f	class:octomap::MapCollection
+rend	OcTreeKey.h	/^		  reverse_iterator rend() { return ray.rend(); }$/;"	f	class:octomap::KeyRay
+reserve	Pointcloud.h	/^    inline void reserve(size_t size) {points.reserve(size); }$/;"	f	class:octomap::Pointcloud
+reset	OcTreeKey.h	/^		  void reset() {$/;"	f	class:octomap::KeyRay
+resetChangeDetection	OccupancyOcTreeBase.h	/^    void resetChangeDetection() { changed_keys.clear(); }$/;"	f	class:octomap::OccupancyOcTreeBase
+resolution	OcTreeBaseImpl.h	/^    double resolution;  \/\/\/< in meters$/;"	m	class:octomap::OcTreeBaseImpl
+resolution_factor	OcTreeBaseImpl.h	/^    double resolution_factor; \/\/\/< = 1. \/ resolution$/;"	m	class:octomap::OcTreeBaseImpl
+reverse_iterator	OcTreeKey.h	/^		  typedef std::vector<OcTreeKey>::reverse_iterator reverse_iterator;$/;"	t	class:octomap::KeyRay
+roll	math/Pose6D.h	/^    inline double roll()  const {return (rotation.toEuler())(0); }$/;"	f	class:octomath::Pose6D
+roll	math/Vector3.h	/^    inline const float& roll() const $/;"	f	class:octomath::Vector3
+roll	math/Vector3.h	/^    inline float& roll() $/;"	f	class:octomath::Vector3
+root	OcTreeBaseImpl.h	/^    NODE* root; \/\/\/< Pointer to the root NODE, NULL for empty tree$/;"	m	class:octomap::OcTreeBaseImpl
+rot	math/Pose6D.h	/^    const Quaternion& rot() const { return rotation; }$/;"	f	class:octomath::Pose6D
+rot	math/Pose6D.h	/^    inline Quaternion& rot() { return rotation; }$/;"	f	class:octomath::Pose6D
+rotation	math/Pose6D.h	/^    Quaternion rotation;$/;"	m	class:octomath::Pose6D
+scan	ScanGraph.h	/^    Pointcloud* scan;$/;"	m	class:octomap::ScanNode
+search	OcTreeBaseImpl.hxx	/^  NODE* OcTreeBaseImpl<NODE,I>::search (const OcTreeKey& key, unsigned int depth) const {$/;"	f	class:octomap::OcTreeBaseImpl
+search	OcTreeBaseImpl.hxx	/^  NODE* OcTreeBaseImpl<NODE,I>::search(const point3d& value, unsigned int depth) const {$/;"	f	class:octomap::OcTreeBaseImpl
+search	OcTreeBaseImpl.hxx	/^  NODE* OcTreeBaseImpl<NODE,I>::search(double x, double y, double z, unsigned int depth) const {$/;"	f	class:octomap::OcTreeBaseImpl
+second	ScanGraph.h	/^    ScanNode* second;$/;"	m	class:octomap::ScanEdge
+segment	MapCollection.hxx	/^  std::vector<Pointcloud*> MapCollection<MAPNODE>::segment(const Pointcloud& scan) const {$/;"	f	class:octomap::MapCollection
+setBBXMax	OccupancyOcTreeBase.hxx	/^void OccupancyOcTreeBase<NODE>::setBBXMax (point3d& max) {$/;"	f	class:octomap::OccupancyOcTreeBase
+setBBXMin	OccupancyOcTreeBase.hxx	/^void OccupancyOcTreeBase<NODE>::setBBXMin (point3d& min) { $/;"	f	class:octomap::OccupancyOcTreeBase
+setClampingThresMax	AbstractOccupancyOcTree.h	/^    void setClampingThresMax(double thresProb){clamping_thres_max = logodds(thresProb); }$/;"	f	class:octomap::AbstractOccupancyOcTree
+setClampingThresMin	AbstractOccupancyOcTree.h	/^    void setClampingThresMin(double thresProb){clamping_thres_min = logodds(thresProb); }$/;"	f	class:octomap::AbstractOccupancyOcTree
+setColor	ColorOcTree.h	/^    inline void  setColor(Color c) {this->color = c; }$/;"	f	class:octomap::ColorOcTreeNode
+setColor	ColorOcTree.h	/^    inline void  setColor(unsigned char r, unsigned char g, unsigned char b) {$/;"	f	class:octomap::ColorOcTreeNode
+setCount	CountingOcTree.h	/^    inline void setCount(unsigned c) {this->setValue(c); }$/;"	f	class:octomap::CountingOcTreeNode
+setId	MapNode.h	/^    inline void setId(std::string newid) { id = newid; }$/;"	f	class:octomap::MapNode
+setLogOdds	OcTreeNode.h	/^    inline void setLogOdds(float l) { value = l; }$/;"	f	class:octomap::OcTreeNode
+setNodeColor	ColorOcTree.h	/^    ColorOcTreeNode* setNodeColor(const float& x, const float& y, $/;"	f	class:octomap::ColorOcTree
+setNodeValue	OccupancyOcTreeBase.hxx	/^NODE* OccupancyOcTreeBase<NODE>::setNodeValue(const OcTreeKey& key, float log_odds_value, bool lazy_eval) {$/;"	f	class:octomap::OccupancyOcTreeBase
+setNodeValue	OccupancyOcTreeBase.hxx	/^NODE* OccupancyOcTreeBase<NODE>::setNodeValue(const point3d& value, float log_odds_value, bool lazy_eval) {$/;"	f	class:octomap::OccupancyOcTreeBase
+setNodeValue	OccupancyOcTreeBase.hxx	/^NODE* OccupancyOcTreeBase<NODE>::setNodeValue(double x, double y, double z, float log_odds_value, bool lazy_eval) {$/;"	f	class:octomap::OccupancyOcTreeBase
+setNodeValueRecurs	OccupancyOcTreeBase.hxx	/^NODE* OccupancyOcTreeBase<NODE>::setNodeValueRecurs(NODE* node, bool node_just_created, const OcTreeKey& key,$/;"	f	class:octomap::OccupancyOcTreeBase
+setOccupancyThres	AbstractOccupancyOcTree.h	/^    void setOccupancyThres(double prob){occ_prob_thres_log = logodds(prob); }$/;"	f	class:octomap::AbstractOccupancyOcTree
+setProbHit	AbstractOccupancyOcTree.h	/^    void setProbHit(double prob){prob_hit_log = logodds(prob); assert(prob_hit_log >= 0.0);}$/;"	f	class:octomap::AbstractOccupancyOcTree
+setProbMiss	AbstractOccupancyOcTree.h	/^    void setProbMiss(double prob){prob_miss_log = logodds(prob); assert(prob_miss_log <= 0.0);}$/;"	f	class:octomap::AbstractOccupancyOcTree
+setResolution	OcTreeBaseImpl.hxx	/^  void OcTreeBaseImpl<NODE,I>::setResolution(double r) {$/;"	f	class:octomap::OcTreeBaseImpl
+setTimestamp	OcTreeStamped.h	/^    inline void setTimestamp(unsigned int timestamp) {this->timestamp = timestamp; }$/;"	f	class:octomap::OcTreeNodeStamped
+setValue	OcTreeDataNode.h	/^    void setValue(T v) {value = v;};$/;"	f	class:octomap::OcTreeDataNode
+setXYZ	math/Vector3.h	/^    inline void setXYZ(float x,float y,float z)$/;"	f	class:octomath::Vector3
+singleIncrement	OcTreeIterator.hxx	/^      void singleIncrement(){$/;"	f	class:iterator_base
+singleIncrement	OcTreeIterator.hxx	/^      void singleIncrement(){$/;"	f	class:leaf_bbx_iterator
+size	MapCollection.h	/^    size_t size() const { return nodes.size(); }$/;"	f	class:octomap::MapCollection
+size	OcTreeBaseImpl.h	/^    virtual inline size_t size() const { return tree_size; }$/;"	f	class:octomap::OcTreeBaseImpl
+size	OcTreeKey.h	/^		  unsigned int size() const { return end_of_ray - ray.begin(); }$/;"	f	class:octomap::KeyRay
+size	Pointcloud.h	/^    size_t size() const {  return points.size(); }$/;"	f	class:octomap::Pointcloud
+size	ScanGraph.h	/^    unsigned int size() const { return nodes.size(); }$/;"	f	class:octomap::ScanGraph
+sizeLookupTable	OcTreeBaseImpl.h	/^    std::vector<double> sizeLookupTable;$/;"	m	class:octomap::OcTreeBaseImpl
+sizeMax	OcTreeKey.h	/^		  unsigned int sizeMax() const { return 100000; }$/;"	f	class:octomap::KeyRay
+size_changed	OcTreeBaseImpl.h	/^    bool size_changed;$/;"	m	class:octomap::OcTreeBaseImpl
+splitPathAndFilename	MapCollection.hxx	/^  void MapCollection<MAPNODE>::splitPathAndFilename(std::string &filenamefullpath, $/;"	f	class:octomap::MapCollection
+stack	OcTreeIterator.hxx	/^      std::stack<StackElement,std::vector<StackElement> > stack;$/;"	m	class:iterator_base
+start	TimeTracker.h	/^	timeval start()$/;"	f	class:TimeTracker
+startnode	OccupancyOcTreeBase.h	/^   NODE** startnode; $/;"	m	class:octomap::OccupancyOcTreeBase
+startsize	OccupancyOcTreeBase.h	/^   int startsize;$/;"	m	class:octomap::OccupancyOcTreeBase
+stop	TimeTracker.h	/^	timeval stop()$/;"	f	class:TimeTracker
+swapContent	OcTreeBaseImpl.hxx	/^  void OcTreeBaseImpl<NODE,I>::swapContent(OcTreeBaseImpl<NODE,I>& other){$/;"	f	class:octomap::OcTreeBaseImpl
+timer	TimeTracker.h	/^	timeval timer[2];$/;"	m	class:TimeTracker
+timestamp	OcTreeStamped.h	/^    unsigned int timestamp;$/;"	m	class:octomap::OcTreeNodeStamped
+toMaxLikelihood	OccupancyOcTreeBase.hxx	/^void OccupancyOcTreeBase<NODE>::toMaxLikelihood() {$/;"	f	class:octomap::OccupancyOcTreeBase
+toMaxLikelihoodRecurs	OccupancyOcTreeBase.hxx	/^void OccupancyOcTreeBase<NODE>::toMaxLikelihoodRecurs(NODE* node, unsigned int depth,$/;"	f	class:octomap::OccupancyOcTreeBase
+totalexpand	OccupancyOcTreeBase.hxx	/^          void OccupancyOcTreeBase<NODE>::totalexpand()$/;"	f	class:octomap::OccupancyOcTreeBase
+trans	math/Pose6D.h	/^    const Vector3& trans() const { return translation; }$/;"	f	class:octomath::Pose6D
+trans	math/Pose6D.h	/^    inline Vector3& trans() { return translation; }$/;"	f	class:octomath::Pose6D
+translation	math/Pose6D.h	/^    Vector3 translation;$/;"	m	class:octomath::Pose6D
+tree	OcTreeIterator.hxx	/^      OcTreeBaseImpl<NodeType,INTERFACE> const* tree; \/\/\/< Octree this iterator is working on$/;"	m	class:iterator_base
+tree_center	OcTreeBaseImpl.h	/^    point3d tree_center;  \/\/ coordinate offset of tree$/;"	m	class:octomap::OcTreeBaseImpl
+tree_depth	OcTreeBaseImpl.h	/^    const unsigned int tree_depth; \/\/\/< Maximum tree depth is fixed to 16 currently$/;"	m	class:octomap::OcTreeBaseImpl
+tree_iterator	OcTreeIterator.hxx	/^      tree_iterator() : iterator_base(){}$/;"	f	class:tree_iterator
+tree_iterator	OcTreeIterator.hxx	/^      tree_iterator(OcTreeBaseImpl<NodeType,INTERFACE> const* tree, unsigned char depth=0) : iterator_base(tree, depth) {};$/;"	f	class:tree_iterator
+tree_iterator	OcTreeIterator.hxx	/^    class tree_iterator : public iterator_base {$/;"	c
+tree_iterator_end	OcTreeBaseImpl.h	/^    const tree_iterator tree_iterator_end;$/;"	m	class:octomap::OcTreeBaseImpl
+tree_max_val	OcTreeBaseImpl.h	/^    const unsigned int tree_max_val;$/;"	m	class:octomap::OcTreeBaseImpl
+tree_size	OcTreeBaseImpl.h	/^    size_t tree_size; \/\/\/< number of nodes in tree$/;"	m	class:octomap::OcTreeBaseImpl
+triTable	MCTables.h	/^	static const int triTable[256][16] =$/;"	m	namespace:octomap
+tsize	OccupancyOcTreeBase.h	/^   int* tsize;$/;"	m	class:octomap::OccupancyOcTreeBase
+u	math/Quaternion.h	/^    inline const float& u() const { return data[0]; }$/;"	f	class:octomath::Quaternion
+u	math/Quaternion.h	/^    inline float& u() { return data[0]; }$/;"	f	class:octomath::Quaternion
+updateInnerOccupancy	OccupancyOcTreeBase.hxx	/^void OccupancyOcTreeBase<NODE>::updateInnerOccupancy(){$/;"	f	class:octomap::OccupancyOcTreeBase
+updateInnerOccupancyRecurs	OccupancyOcTreeBase.hxx	/^void OccupancyOcTreeBase<NODE>::updateInnerOccupancyRecurs(NODE* node, unsigned int depth){$/;"	f	class:octomap::OccupancyOcTreeBase
+updateMap	MapNode.hxx	/^  void MapNode<TREETYPE>::updateMap(const Pointcloud& cloud, point3d sensor_origin) {$/;"	f	class:octomap::MapNode
+updateNode	OccupancyOcTreeBase.hxx	/^NODE* OccupancyOcTreeBase<NODE>::updateNode(const OcTreeKey& key, bool occupied, bool lazy_eval) {$/;"	f	class:octomap::OccupancyOcTreeBase
+updateNode	OccupancyOcTreeBase.hxx	/^NODE* OccupancyOcTreeBase<NODE>::updateNode(const OcTreeKey& key, float log_odds_update, bool lazy_eval) {$/;"	f	class:octomap::OccupancyOcTreeBase
+updateNode	OccupancyOcTreeBase.hxx	/^NODE* OccupancyOcTreeBase<NODE>::updateNode(const point3d& value, bool occupied, bool lazy_eval) {$/;"	f	class:octomap::OccupancyOcTreeBase
+updateNode	OccupancyOcTreeBase.hxx	/^NODE* OccupancyOcTreeBase<NODE>::updateNode(const point3d& value, float log_odds_update, bool lazy_eval) {$/;"	f	class:octomap::OccupancyOcTreeBase
+updateNode	OccupancyOcTreeBase.hxx	/^NODE* OccupancyOcTreeBase<NODE>::updateNode(double x, double y, double z, bool occupied, bool lazy_eval) {$/;"	f	class:octomap::OccupancyOcTreeBase
+updateNode	OccupancyOcTreeBase.hxx	/^NODE* OccupancyOcTreeBase<NODE>::updateNode(double x, double y, double z, float log_odds_update, bool lazy_eval) {$/;"	f	class:octomap::OccupancyOcTreeBase
+updateNodeLogOdds	OccupancyOcTreeBase.hxx	/^void OccupancyOcTreeBase<NODE>::updateNodeLogOdds(NODE* occupancyNode, const float& update) const {$/;"	f	class:octomap::OccupancyOcTreeBase
+updateNodeRecurs	OccupancyOcTreeBase.hxx	/^NODE* OccupancyOcTreeBase<NODE>::updateNodeRecurs(NODE* node, bool node_just_created, const OcTreeKey& key,$/;"	f	class:octomap::OccupancyOcTreeBase
+updateNodeRecursfor2d	OccupancyOcTreeBase.hxx	/^NODE* OccupancyOcTreeBase<NODE>::updateNodeRecursfor2d(NODE* node, bool node_just_created, const OcTreeKey& key,$/;"	f	class:octomap::OccupancyOcTreeBase
+updateOccupancyChildren	OcTreeNode.h	/^    inline void updateOccupancyChildren() {$/;"	f	class:octomap::OcTreeNode
+updateOccupancyChildren	OcTreeStamped.h	/^    inline void updateOccupancyChildren() {      $/;"	f	class:octomap::OcTreeNodeStamped
+updateTimestamp	OcTreeStamped.h	/^    inline void updateTimestamp() { timestamp = (unsigned int) time(NULL);}$/;"	f	class:octomap::OcTreeNodeStamped
+useBBXLimit	OccupancyOcTreeBase.h	/^    void useBBXLimit(bool enable) { use_bbx_limit = enable; }$/;"	f	class:octomap::OccupancyOcTreeBase
+use_bbx_limit	OccupancyOcTreeBase.h	/^    bool use_bbx_limit;  \/\/\/< use bounding box for queries (needs to be set)?$/;"	m	class:octomap::OccupancyOcTreeBase
+use_change_detection	OccupancyOcTreeBase.h	/^    bool use_change_detection;$/;"	m	class:octomap::OccupancyOcTreeBase
+value	OcTreeDataNode.h	/^    T value;$/;"	m	class:octomap::OcTreeDataNode
+vertexList	MCTables.h	/^	static const point3d vertexList[12] = $/;"	m	namespace:octomap
+volume	OcTreeBaseImpl.hxx	/^	  double OcTreeBaseImpl<NODE,I>::volume() {$/;"	f	class:octomap::OcTreeBaseImpl
+weight	ScanGraph.h	/^    double weight;$/;"	m	class:octomap::ScanEdge
+write	MapCollection.hxx	/^  bool MapCollection<MAPNODE>::write(std::string filename) {$/;"	f	class:octomap::MapCollection
+writeBinaryData	OccupancyOcTreeBase.hxx	/^std::ostream& OccupancyOcTreeBase<NODE>::writeBinaryData(std::ostream &s) const{$/;"	f	class:octomap::OccupancyOcTreeBase
+writeBinaryNode	OccupancyOcTreeBase.hxx	/^std::ostream& OccupancyOcTreeBase<NODE>::writeBinaryNode(std::ostream &s, const NODE* node) const{$/;"	f	class:octomap::OccupancyOcTreeBase
+writeData	OcTreeBaseImpl.hxx	/^	  std::ostream& OcTreeBaseImpl<NODE,I>::writeData(std::ostream &s) const{$/;"	f	class:octomap::OcTreeBaseImpl
+writeMap	MapNode.hxx	/^  bool MapNode<TREETYPE>::writeMap(std::string filename){$/;"	f	class:octomap::MapNode
+writePointcloud	MapCollection.hxx	/^  bool MapCollection<MAPNODE>::writePointcloud(std::string filename) {$/;"	f	class:octomap::MapCollection
+writeValue	OcTreeDataNode.hxx	/^  std::ostream& OcTreeDataNode<T>::writeValue(std::ostream &s) const{$/;"	f	class:octomap::OcTreeDataNode
+x	math/Pose6D.h	/^    inline const float& x() const { return translation(0); }$/;"	f	class:octomath::Pose6D
+x	math/Pose6D.h	/^    inline float& x() { return translation(0); }$/;"	f	class:octomath::Pose6D
+x	math/Quaternion.h	/^    inline const float& x() const { return data[1]; }$/;"	f	class:octomath::Quaternion
+x	math/Quaternion.h	/^    inline float& x() { return data[1]; }$/;"	f	class:octomath::Quaternion
+x	math/Vector3.h	/^    inline const float& x() const $/;"	f	class:octomath::Vector3
+x	math/Vector3.h	/^    inline float& x() $/;"	f	class:octomath::Vector3
+y	math/Pose6D.h	/^    inline const float& y() const { return translation(1); }$/;"	f	class:octomath::Pose6D
+y	math/Pose6D.h	/^    inline float& y() { return translation(1); }$/;"	f	class:octomath::Pose6D
+y	math/Quaternion.h	/^    inline const float& y() const { return data[2]; }$/;"	f	class:octomath::Quaternion
+y	math/Quaternion.h	/^    inline float& y() { return data[2]; }$/;"	f	class:octomath::Quaternion
+y	math/Vector3.h	/^    inline const float& y() const $/;"	f	class:octomath::Vector3
+y	math/Vector3.h	/^    inline float& y() $/;"	f	class:octomath::Vector3
+yaw	math/Pose6D.h	/^    inline double yaw()   const {return (rotation.toEuler())(2); }$/;"	f	class:octomath::Pose6D
+yaw	math/Vector3.h	/^    inline const float& yaw() const $/;"	f	class:octomath::Vector3
+yaw	math/Vector3.h	/^    inline float& yaw() $/;"	f	class:octomath::Vector3
+z	math/Pose6D.h	/^    inline const float& z() const { return translation(2); }$/;"	f	class:octomath::Pose6D
+z	math/Pose6D.h	/^    inline float& z() { return translation(2); }$/;"	f	class:octomath::Pose6D
+z	math/Quaternion.h	/^    inline const float& z() const { return data[3]; }$/;"	f	class:octomath::Quaternion
+z	math/Quaternion.h	/^    inline float& z() { return data[3]; }$/;"	f	class:octomath::Quaternion
+z	math/Vector3.h	/^    inline const float& z() const $/;"	f	class:octomath::Vector3
+z	math/Vector3.h	/^    inline float& z() $/;"	f	class:octomath::Vector3
+~AbstractOcTree	AbstractOcTree.h	/^    virtual ~AbstractOcTree() {};$/;"	f	class:octomap::AbstractOcTree
+~AbstractOccupancyOcTree	AbstractOccupancyOcTree.h	/^    virtual ~AbstractOccupancyOcTree() {};$/;"	f	class:octomap::AbstractOccupancyOcTree
+~MapCollection	MapCollection.hxx	/^  MapCollection<MAPNODE>::~MapCollection() {$/;"	f	class:octomap::MapCollection
+~MapNode	MapNode.hxx	/^  MapNode<TREETYPE>::~MapNode() {$/;"	f	class:octomap::MapNode
+~OcTree	OcTree.h	/^    virtual ~OcTree(){};$/;"	f	class:octomap::OcTree
+~OcTreeBaseImpl	OcTreeBaseImpl.hxx	/^  OcTreeBaseImpl<NODE,I>::~OcTreeBaseImpl(){$/;"	f	class:octomap::OcTreeBaseImpl
+~OcTreeBaseSE	OcTreeBaseSE.hxx	/^  OcTreeBaseSE<NODE>::~OcTreeBaseSE () {$/;"	f	class:octomap::OcTreeBaseSE
+~OcTreeDataNode	OcTreeDataNode.hxx	/^  OcTreeDataNode<T>::~OcTreeDataNode()$/;"	f	class:octomap::OcTreeDataNode
+~OccupancyOcTreeBase	OccupancyOcTreeBase.hxx	/^	  OccupancyOcTreeBase<NODE>::~OccupancyOcTreeBase(){$/;"	f	class:octomap::OccupancyOcTreeBase
